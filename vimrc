@@ -19,7 +19,7 @@ set noerrorbells visualbell t_vb=
 
 "-----------Visuals-----------"
 colorscheme atom-dark
-set guifont=Fira_Code:h14
+"set guifont=Fira_Code:h14
 " color of numbers
 :nmap <C-N><C-N> :set invnumber<CR>
 :set numberwidth=5
