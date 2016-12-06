@@ -17,6 +17,10 @@ set guioptions-=R
 "no error sound
 set noerrorbells visualbell t_vb=
 
+"----------Python-------------"
+"executes files
+autocmd FileType python nnoremap<buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+
 "-----------Visuals-----------"
 colorscheme atom-dark
 "set guifont=Fira_Code:h14
