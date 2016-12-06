@@ -110,6 +110,7 @@ let Highlight_Tag=1
 let Tlist_Compact_Format=1
 let Tlist_Use_Right_Window=1
 let tlist_php_settings = 'php;php:class;f:function'
+let Tlist_Ctags_Cmd='/usr/bin/ctags-exuberant'
 
 "easymotion
 " <Leader>f{char} to move to {char}
@@ -135,7 +136,7 @@ let g:airline_powerline_fonts = 1
 " hide words count
 let g:airline#extensions#wordcount#enabled = 0
 "airline that looks like powerline
-let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
+"let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
 "enables buffer tags
 let g:airline#extensions#tabline#enabled = 1
 
