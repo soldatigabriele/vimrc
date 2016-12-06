@@ -6,7 +6,7 @@ syntax enable
 set backspace=indent,eol,start
 let mapleader = ','         "change default leader key to comma 
 set number
-set linespace=5			"Macvim line heigh
+set linespace=2			"Macvim line heigh
 "set macligatures            " pretty simbols
 "set guioptions-=e
 "remove the sidebar
@@ -20,6 +20,8 @@ set noerrorbells visualbell t_vb=
 "-----------Visuals-----------"
 colorscheme atom-dark
 "set guifont=Fira_Code:h14
+set guifont=Inconsolata_for_powerline:h14
+"set guifont=Fira_Mono_for_powerline:h12
 " color of numbers
 :nmap <C-N><C-N> :set invnumber<CR>
 :set numberwidth=5
@@ -125,6 +127,18 @@ let tlist_php_settings = 'php;php:class;f:function'
 "map  <Leader>w <Plug>(easymotion-bd-w)
 "nmap <Leader>w <Plug>(easymotion-overwin-w)
 
+"powerline
+"always display status line 	
+:set laststatus=2
+"load patched fonts
+let g:airline_powerline_fonts = 1
+" hide words count
+let g:airline#extensions#wordcount#enabled = 0
+"airline that looks like powerline
+let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
+"enables buffer tags
+let g:airline#extensions#tabline#enabled = 1
+
 "-----------Laravel-Specific--------"
 nmap <Leader>lr :e routes/web.php<cr>
 nmap <Leader>lm :!php artisan make:
@@ -154,7 +168,10 @@ Plugin 'vim-scripts/taglist.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'msanders/snipmate.vim'
 Plugin 'klen/python-mode'
-Plugin 'powerline/powerline'
+"Plugin 'powerline/powerline'
+Plugin 'vim-airline/vim-airline'
+"Git plugin 
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
