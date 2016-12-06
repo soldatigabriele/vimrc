@@ -153,6 +153,8 @@ Plugin 'skwp/greplace.vim'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'msanders/snipmate.vim'
+Plugin 'klen/python-mode'
+Plugin 'powerline/powerline'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
