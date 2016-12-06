@@ -1,8 +1,9 @@
 # vimrc
 
-Clone
+<h3>Clone</h3>
 
-git clone https://github.com/soldatigabriele/vimrc.git ~/.vim
+git clone git@github.com:soldatigabriele/vimrc.git ~/.vim<br>
+git clone https://github.com/soldatigabriele/vimrc.git ~/.vim<br>
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
