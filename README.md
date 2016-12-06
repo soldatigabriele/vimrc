@@ -17,3 +17,17 @@ ln -s ~/.vim/vimrc ~/.vimrc
 <br>
 ln -s ~/.vim/gvimrc ~/.gvimrc
 <br>
+<h3>Add SSH</h3>
+cd ~/.ssh
+<br>
+ssh-keygen -t rsa -C 'soldati.gabriele@gmail.com'
+<br>
+cat git_rsa.pub | pbcopy
+<br>
+" add the ssh to github
+<br>
+ssh-add git_rsa
+<br>
+ssh -T git@github.com
+<br>
+
