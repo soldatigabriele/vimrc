@@ -38,6 +38,8 @@ Change theme to "agnoster"
 <br>
 https://github.com/powerline/fonts/blob/master/Inconsolata/Inconsolata%20for%20Powerline.otf?raw=true
 <br>
+https://github.com/powerline/fonts/blob/master/FiraMono/FuraMono-Regular%20Powerline.otf?raw=true
+<br>
 Double click and install it. Then select it from the iterm2 font.
 <br>
 
