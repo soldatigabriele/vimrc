@@ -24,8 +24,7 @@ ssh-keygen -t rsa -C 'soldati.gabriele@gmail.com'
 <br>
 cat git_rsa.pub | pbcopy
 <br>
-" add the ssh to github
-<br>
+<h5>add the ssh to github</h5>
 ssh-add git_rsa
 <br>
 ssh -T git@github.com
