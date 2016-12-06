@@ -31,3 +31,17 @@ ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
 <br>
 
+<h3>Powerline terminal</h3>
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+<br>
+Change theme to "agnoster"
+<br>
+https://github.com/powerline/fonts/blob/master/Inconsolata/Inconsolata%20for%20Powerline.otf?raw=true
+<br>
+Double click and install it. Then select it from the iterm2 font.
+<br>
+
+
+
+
+
