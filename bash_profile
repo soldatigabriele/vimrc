@@ -16,6 +16,7 @@ alias cdhome='cd /Users/Gabri/Homestead'
 alias cdcode='cd /Users/Gabri/Dropbox/Vagrant/Code' 
 alias cd22='cd /Users/Gabri/Dropbox/Vagrant/Code/22group' 
 alias cdwp='cd ~/Dropbox/Vagrant/Code/22group/wordpress/wp-content/plugins'
+alias cdvim='cd ~/.vim'
 
 alias pa='php artisan' 
 alias vs='vagrant ssh' 
