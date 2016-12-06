@@ -64,6 +64,9 @@ Once you have the binary you can move it to your bin folder as:
 <br>
 sudo mv ctags /usr/bin/ctags-exuberant
 
-
+<h3>Bash_profile</h3>
+add to the field "Send text at start" in iTerm: Pref->Profile->General
+<br>
+source ~/.bash_profile
 
 
