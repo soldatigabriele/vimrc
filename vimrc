@@ -19,7 +19,7 @@ set noerrorbells visualbell t_vb=
 
 "----------Python-------------"
 "executes files
-autocmd FileType python nnoremap<buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+autocmd FileType python nnoremap<buffer> <F8> :exec '!python3' shellescape(@%, 1)<cr>
 
 "-----------Visuals-----------"
 colorscheme atom-dark
@@ -35,7 +35,8 @@ set guifont=Fira_Mono_for_powerline:h12
 "set space on the left
 hi LineNr guibg=bg
 set foldcolumn=0
-
+"disable folding
+set nofoldenable
 hi foldcolumn guibg=bg
 "remove border on the left
 hi vertsplit guifg=bg guibg=bg
@@ -143,6 +144,9 @@ let g:airline#extensions#wordcount#enabled = 0
 "let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
 "enables buffer tags
 let g:airline#extensions#tabline#enabled = 1
+" Emmet
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+
 
 "-----------Laravel-Specific--------"
 nmap <Leader>lr :e routes/web.php<cr>
@@ -172,11 +176,12 @@ Plugin 'skwp/greplace.vim'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'msanders/snipmate.vim'
-Plugin 'klen/python-mode'
-"Plugin 'powerline/powerline'
 Plugin 'vim-airline/vim-airline'
 "Git plugin 
 Plugin 'tpope/vim-fugitive'
+"Plugin 'klen/python-mode'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'mattn/emmet-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
