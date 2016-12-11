@@ -20,6 +20,7 @@ set noerrorbells visualbell t_vb=
 "----------Python-------------"
 "executes files
 autocmd FileType python nnoremap<buffer> <F8> :exec '!python3' shellescape(@%, 1)<cr>
+autocmd FileType python nnoremap<buffer> <C-R> :w<cr> :exec '!python3' shellescape(@%, 1)<cr>
 
 "-----------Visuals-----------"
 colorscheme atom-dark
