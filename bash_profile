@@ -27,6 +27,10 @@ alias vh='vagrant halt'
 alias vu='vagrant up' 
 alias gw='grunt watch' 
 
+alias vpush=vimpush.sh
+alias vpull=vimpull.sh
+
+
 alias up='propertystreamupload.sh'
 
 ##
