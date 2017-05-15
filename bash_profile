@@ -33,6 +33,9 @@ alias vpull=vimpull.sh
 
 alias up='propertystreamupload.sh'
 
+alias tf='source ~/tensorflow/bin/activate'
+
+
 ##
 # Your previous /Users/Gabri/.bash_profile file was backed up as /Users/Gabri/.bash_profile.macports-saved_2016-09-03_at_14:49:00
 ##
@@ -40,4 +43,8 @@ alias up='propertystreamupload.sh'
 # MacPorts Installer addition on 2016-09-03_at_14:49:00: adding an appropriate PATH variable for use with MacPorts.
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
+
+export CUDA_HOME=/usr/local/cuda
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
+export PATH="$CUDA_HOME/bin:$PATH"
 
