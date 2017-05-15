@@ -8,7 +8,7 @@ ssh-keygen -t rsa -C 'soldati.gabriele@gmail.com'
 cat git_rsa.pub | pbcopy
 <br>
 <h4>Open Github settings and paste the key</h4>
-ssh-add git_rsa
+ssh-add git_rsa.pub
 <br>
 ssh -T git@github.com
 <br>
@@ -67,6 +67,6 @@ sudo mv ctags /usr/bin/ctags-exuberant
 <h3>Bash_profile</h3>
 add to the field "Send text at start" in iTerm: Pref->Profile->General
 <br>
-source ~/.bash_profile
+source ~/.bash_profile; clear;
 
 
