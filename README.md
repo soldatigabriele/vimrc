@@ -67,6 +67,6 @@ sudo mv ctags /usr/bin/ctags-exuberant
 <h3>Bash_profile</h3>
 add to the field "Send text at start" in iTerm: Pref->Profile->General
 <br>
-source ~/.bash_profile
+source ~/.bash_profile; clear;
 
 
