@@ -22,6 +22,17 @@ set noerrorbells visualbell t_vb=
 autocmd FileType python nnoremap<buffer> <F8> :exec '!python3' shellescape(@%, 1)<cr>
 autocmd FileType python nnoremap<buffer> <C-R> :w<cr> :exec '!python3' shellescape(@%, 1)<cr>
 
+"----------Commenting-------------"
+" Commenting blocks of code.
+autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
+autocmd FileType sh,ruby,python   let b:comment_leader = '# '
+autocmd FileType conf,fstab       let b:comment_leader = '# '
+autocmd FileType tex              let b:comment_leader = '% '
+autocmd FileType mail             let b:comment_leader = '> '
+autocmd FileType vim              let b:comment_leader = '" '
+noremap <silent> <C-C> :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+noremap <silent> <C-U> :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
+
 "-----------Visuals-----------"
 colorscheme atom-dark
 "set guifont=Fira_Code:h14
@@ -95,7 +106,8 @@ let NERDTreeHijackNetrw = 0
 nmap <C-P> :CtrlP<cr>
 nmap <C-R> :CtrlPBufTag<cr>
 nmap <C-E> :CtrlPMRUFiles<cr>
-nmap <leader>cc :ClearAllCtrlPCaches<cr>
+" conflict comment
+"nmap <leader>cc :ClearAllCtrlPCaches<cr>
 
 "let g:ctrlp_custom_ignore = 'node_modules\Vendor\DS_Store\|git'
 let g:ctrlp_custom_ignore = { 'dir': 'vendor\|git\build$\|node_modules$' }
