@@ -19,8 +19,8 @@ set noerrorbells visualbell t_vb=
 
 "----------Python-------------"
 "executes files
-autocmd FileType python nnoremap<buffer> <F8> :exec '!python3' shellescape(@%, 1)<cr>
-autocmd FileType python nnoremap<buffer> <C-R> :w<cr> :exec '!python3' shellescape(@%, 1)<cr>
+"autocmd FileType python nnoremap<buffer> <F8> :exec '!python3' shellescape(@%, 1)<cr>
+"autocmd FileType python nnoremap<buffer> <C-R> :w<cr> :exec '!python3' shellescape(@%, 1)<cr>
 
 "----------Commenting-------------"
 " Commenting blocks of code.
@@ -84,6 +84,8 @@ nmap ∑ :vertical resize +4<cr>
 nmap Ω :vertical resize -4<cr>
 nmap © :2winc +<cr>
 nmap µ :2winc -<cr>
+
+" nmap <Tab> <C-P>
 
 "-----------Mapping-----------"
 nmap <Leader>f :tag<space>
@@ -158,7 +160,7 @@ let g:airline#extensions#wordcount#enabled = 0
 "enables buffer tags
 let g:airline#extensions#tabline#enabled = 1
 " Emmet
-imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+"imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 
 "-----------Laravel-Specific--------"
@@ -170,6 +172,11 @@ nmap <Leader><Leader>m :CtrlP<cr>app/
 nmap <Leader><Leader>v :CtrlP<cr>resources/views
 nmap <Leader><Leader>p :CtrlP<cr>
 
+
+"----------------------PyDiction-------------------
+filetype plugin on 
+let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict' 
+let g:pydiction_menu_height = 3
 
 "----------------------Plugins-------------------
 "so ~/.vim/plugins.vim
@@ -193,8 +200,9 @@ Plugin 'vim-airline/vim-airline'
 "Git plugin 
 Plugin 'tpope/vim-fugitive'
 "Plugin 'klen/python-mode'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'mattn/emmet-vim'
+"Plugin 'mattn/emmet-vim'
+"autocomplete for python"
+Plugin 'vim-scripts/Pydiction'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
