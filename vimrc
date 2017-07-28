@@ -64,8 +64,8 @@ set splitbelow
 set splitright
 
 " tabelle e schede
-nmap <C-Tab> gt
-nmap <C-S-Tab> gT
+:map <C-Tab> gt
+:map <C-S-Tab> gT
 "cambia scheda
 nmap  <C-W><C-W>
 

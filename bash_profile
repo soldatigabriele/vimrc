@@ -12,6 +12,7 @@ alias ii='git add .'
 alias oo='git commit -m "update"'
 alias pp='git push'
 
+alias scr='cd ~/Desktop/script'
 alias cdport='cd /Applications/MAMP/htdocs/Portfolio'
 alias cdhome='cd /Users/Gabri/Homestead'
 alias cdcode='cd /Users/Gabri/Dropbox/Vagrant/Code' 
