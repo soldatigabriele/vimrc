@@ -35,6 +35,7 @@ alias vpull=vimpull.sh
 alias up='propertystreamupload.sh'
 
 alias tf='source ~/tensorflow/bin/activate'
+alias tb='tensorboard --logdir=log'
 
 
 ##

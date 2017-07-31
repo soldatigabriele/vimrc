@@ -17,6 +17,10 @@ set guioptions-=R
 "no error sound
 set noerrorbells visualbell t_vb=
 
+"----------Copy and paste-------------"
+" avoid copying the replaced word
+xnoremap p pgvy
+
 "----------Python-------------"
 "executes files
 "autocmd FileType python nnoremap<buffer> <F8> :exec '!python3' shellescape(@%, 1)<cr>
@@ -39,9 +43,29 @@ colorscheme atom-dark
 "set guifont=Inconsolata_for_powerline:h14
 set guifont=Fira_Mono_for_powerline:h12
 " color of numbers
-:nmap <C-N><C-N> :set invnumber<CR>
 :set numberwidth=5
-":set relativenumber
+
+"----------Relative Numbers ----------"
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+    set norelativenumber
+  else
+    set number
+    set relativenumber
+  endif
+endfunc
+"toggle between relative numbers and normal numbers
+nnoremap <C-n> :call NumberToggle()<cr>
+" remove relative numbers when losing window focus
+:au FocusLost * :set norelativenumber
+":au FocusGained * :set relativenumber
+
+"not used anymore
+"autocmd InsertEnter * :set norelativenumber
+"autocmd InsertLeave * :set relativenumber
+":nmap <C-N> :set invnumber<CR>
+":nmap <C-N><C-N>:set relativenumber<CR>
 
 
 "set space on the left
@@ -93,7 +117,7 @@ nmap <Leader>ev :tabedit $MYVIMRC<cr>
 "nmap <Leader>ep :e ~/.vim/plugins.vim<cr>
 nmap <Leader>es :e ~/.vim/snippets/php.snippets<cr>
 "nmap <Leader>pl :tabedit ~/.vim/plugins.vim<cr>
-nmap <C-S> :w<cr>
+"nmap <C-S> :w<cr>
 nmap <D-S> :w<cr>
 "remove highlighted text
 nmap <Leader><space> :nohlsearch<cr>
