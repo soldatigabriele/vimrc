@@ -224,7 +224,7 @@ Plugin 'vim-airline/vim-airline'
 "Git plugin 
 Plugin 'tpope/vim-fugitive'
 "Plugin 'klen/python-mode'
-"Plugin 'mattn/emmet-vim'
+Plugin 'mattn/emmet-vim'
 "autocomplete for python"
 Plugin 'vim-scripts/Pydiction'
 Plugin 'tomtom/tcomment_vim'
