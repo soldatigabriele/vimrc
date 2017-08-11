@@ -1,5 +1,10 @@
 # vimrc
 
+
+<h3>Install Macvim</h3>
+use install_mvim.sh
+<br>
+
 <h3>Add SSH</h3>
 cd ~/.ssh
 <br>
@@ -68,5 +73,4 @@ sudo mv ctags /usr/bin/ctags-exuberant
 add to the field "Send text at start" in iTerm: Pref->Profile->General
 <br>
 source ~/.bash_profile; clear;
-
 
