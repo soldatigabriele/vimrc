@@ -74,3 +74,6 @@ add to the field "Send text at start" in iTerm: Pref->Profile->General
 <br>
 source ~/.bash_profile; clear;
 
+<h3>UBUNTU</h3>
+<h2>map caps to escape</h2>
+dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
