@@ -75,5 +75,7 @@ add to the field "Send text at start" in iTerm: Pref->Profile->General
 source ~/.bash_profile; clear;
 
 <h3>UBUNTU</h3>
+<h2>install GVIM</h2>
+sudo apt-get install vim-gnome
 <h2>map caps to escape</h2>
-dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
+dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
