@@ -41,10 +41,18 @@ noremap <silent> <C-U> :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/'
 colorscheme atom-dark
 "set guifont=Fira_Code:h14
 "set guifont=Inconsolata_for_powerline:h14
-set guifont=Fira_Mono_for_powerline:h12
 " color of numbers
 :set numberwidth=5
-
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 12
+  elseif has("gui_macvim")
+    set guifont=Fira_Mono_for_powerline:h12
+    set guifont=Menlo\ Regular:h14
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+endif
 "----------Relative Numbers ----------"
 function! NumberToggle()
   if(&relativenumber == 1)

@@ -78,4 +78,6 @@ source ~/.bash_profile; clear;
 <h2>install GVIM</h2>
 sudo apt-get install vim-gnome
 <h2>map caps to escape</h2>
+
+<h2>Change font</h2>
 dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
