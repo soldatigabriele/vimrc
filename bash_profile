@@ -19,7 +19,7 @@ alias cdcode='cd /Users/Gabri/Dropbox/Vagrant/Code'
 alias cd22='cd /Users/Gabri/Dropbox/Vagrant/Code/22group' 
 alias cdwp='cd ~/Dropbox/Vagrant/Code/22group/wordpress/wp-content/plugins'
 alias cdvim='cd ~/.vim'
-alias cdpy='cd Dropbox/python_tutorial'
+alias cdpy='cd ~/Dropbox/python_tutorial'
 alias cdtf='cd /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/tensorflow/models/image'
 
 alias pa='php artisan' 
