@@ -111,11 +111,24 @@ nmap <C-L> <C-W><C-l>
 "nmap <C-B> :vertical resize +5<cr>
 "nmap <C-M> :vertical resize -5<cr>
 nmap √ :vsp<cr>
+
 nmap ˙ :sp<cr>
 nmap ∑ :vertical resize +4<cr>
 nmap Ω :vertical resize -4<cr>
 nmap © :2winc +<cr>
 nmap µ :2winc -<cr>
+
+"ubuntu
+if has("gui_running")
+  if has("gui_gtk2")
+    nmap  :vsp<cr>
+    nmap  :sp <cr>
+    nmap  :vertical resize +4<cr>
+    nmap  :vertical resize -4<cr>
+    nmap  :2winc +<cr>
+    nmap  :2winc -<cr>
+  endif
+endif
 
 " nmap <Tab> <C-P>
 
@@ -129,7 +142,14 @@ nmap <Leader>es :e ~/.vim/snippets/php.snippets<cr>
 nmap <D-S> :w<cr>
 "remove highlighted text
 nmap <Leader><space> :nohlsearch<cr>
-
+"ubuntu
+if has("gui_running")
+  if has("gui_gtk2")
+    "save and close file
+    nmap  :w<cr>
+    nmap  :q<cr>
+  endif
+endif
 "-----------Plugins-----------"
 
 "nerdtree
