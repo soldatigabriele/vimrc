@@ -184,6 +184,11 @@ let Tlist_Use_Right_Window=1
 let tlist_php_settings = 'php;php:class;f:function'
 let Tlist_Ctags_Cmd='/usr/bin/ctags-exuberant'
 
+
+"GitGutter
+set updatetime=250 
+
+
 "easymotion
 " <Leader>f{char} to move to {char}
 "map  <Leader>f <Plug>(easymotion-bd-fe)
@@ -223,7 +228,6 @@ nmap <Leader><Leader>c :CtrlP<cr>app/Http/Controllers/
 nmap <Leader><Leader>m :CtrlP<cr>app/
 nmap <Leader><Leader>v :CtrlP<cr>resources/views
 nmap <Leader><Leader>p :CtrlP<cr>
-
 
 "----------------------PyDiction-------------------
 filetype plugin on 
