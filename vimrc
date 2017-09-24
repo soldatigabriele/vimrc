@@ -256,6 +256,7 @@ Plugin 'mattn/emmet-vim'
 "autocomplete for python"
 Plugin 'vim-scripts/Pydiction'
 Plugin 'tomtom/tcomment_vim'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
