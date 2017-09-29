@@ -158,7 +158,7 @@ let NERDTreeHijackNetrw = 0
 
 "ctrlP
 nmap <C-P> :CtrlP<cr>
-nmap <C-R> :CtrlPBufTag<cr>
+" nmap <C-R> :CtrlPBufTag<cr>
 nmap <C-E> :CtrlPMRUFiles<cr>
 " conflict comment
 "nmap <leader>cc :ClearAllCtrlPCaches<cr>
@@ -172,16 +172,16 @@ set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
 
 "Tlist
-nmap <C-R> :TlistOpen<cr>
-let Tlist_Show_One_File=1
-let Tlist_Close_On_Select=1
-let Tlist_Inc_Winwidth=0
-let Tlist_Show_Menu=1
-let Tlist_Highlight_Tag=0
-let Highlight_Tag=1
-let Tlist_Compact_Format=1
-let Tlist_Use_Right_Window=1
-let tlist_php_settings = 'php;php:class;f:function'
+" nmap <C-R> :TlistOpen<cr>
+" let Tlist_Show_One_File=1
+" let Tlist_Close_On_Select=1
+" let Tlist_Inc_Winwidth=0
+" let Tlist_Show_Menu=1
+" let Tlist_Highlight_Tag=0
+" let Highlight_Tag=1
+" let Tlist_Compact_Format=1
+" let Tlist_Use_Right_Window=1
+" let tlist_php_settings = 'php;php:class;f:function'
 let Tlist_Ctags_Cmd='/usr/bin/ctags-exuberant'
 
 
@@ -234,6 +234,10 @@ filetype plugin on
 let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict' 
 let g:pydiction_menu_height = 3
 
+
+"----------------------Tagbar-------------------
+nmap <C-R> :TagbarToggle<CR>
+
 "----------------------Plugins-------------------
 "so ~/.vim/plugins.vim
 
@@ -249,7 +253,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'skwp/greplace.vim'
-Plugin 'vim-scripts/taglist.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'msanders/snipmate.vim'
 Plugin 'vim-airline/vim-airline'
@@ -261,6 +264,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'vim-scripts/Pydiction'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
