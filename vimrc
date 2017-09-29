@@ -48,7 +48,7 @@ if has("gui_running")
     set guifont=Inconsolata\ 12
   elseif has("gui_macvim")
     set guifont=Fira_Mono_for_powerline:h12
-    " set guifont=Menlo\ Regular:h14
+    " set guifont=Menlo\ Regular:h12
   elseif has("gui_win32")
     set guifont=Consolas:h11:cANSI
   endif
