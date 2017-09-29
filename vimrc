@@ -171,20 +171,6 @@ let g:ctrlp_use_caching = 0
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
 
-"Tlist
-" nmap <C-R> :TlistOpen<cr>
-" let Tlist_Show_One_File=1
-" let Tlist_Close_On_Select=1
-" let Tlist_Inc_Winwidth=0
-" let Tlist_Show_Menu=1
-" let Tlist_Highlight_Tag=0
-" let Highlight_Tag=1
-" let Tlist_Compact_Format=1
-" let Tlist_Use_Right_Window=1
-" let tlist_php_settings = 'php;php:class;f:function'
-let Tlist_Ctags_Cmd='/usr/bin/ctags-exuberant'
-
-
 "GitGutter
 set updatetime=250 
 
@@ -237,6 +223,7 @@ let g:pydiction_menu_height = 3
 
 "----------------------Tagbar-------------------
 nmap <C-R> :TagbarToggle<CR>
+let Tlist_Ctags_Cmd='/usr/bin/ctags-exuberant'
 
 "----------------------Plugins-------------------
 "so ~/.vim/plugins.vim
