@@ -189,6 +189,7 @@ set updatetime=250
 
 " Move to word
 map  <Leader>w <Plug>(easymotion-bd-w)
+map  <Leader>b <Plug>(easymotion-bd-b)
 " nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 "powerline
