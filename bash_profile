@@ -4,14 +4,15 @@ export PATH="~/.composer/vendor/bin:$PATH"
 alias gs='git status'
 alias gl='git log'
 alias gb='git branch'
-alias ga='git add .'
+alias ga='git add'
 alias gaa='git add .'
-alias gc='git commit -a -m "update"'
-alias gca='git commit -v -a -m "update"'
+alias gca='git commit -a -m "update"'
+alias gp='git push'
 
-alias ii='git add .'
-alias oo='git commit -m "update"'
-alias pp='git push'
+function gc() {
+    git add .
+    git commit -a -m "$1"
+}
 
 function gcp() {
     git add .
@@ -19,6 +20,9 @@ function gcp() {
     git push
 }
 
+
+alias l='ls -hl'
+alias ll='ls -hlSG'
 alias scr='cd ~/Desktop/script'
 alias cdport='cd /Applications/MAMP/htdocs/Portfolio'
 alias cdhome='cd /Users/Gabri/Homestead'
