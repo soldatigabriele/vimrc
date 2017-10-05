@@ -4,9 +4,9 @@ export PATH="~/.composer/vendor/bin:$PATH"
 alias gs='git status'
 alias gl='git log'
 alias gb='git branch'
-alias ga='git add'
+alias ga='git add .'
 alias gaa='git add .'
-alias gc='git commit -m '
+alias gc='git commit -m "update"'
 
 alias ii='git add .'
 alias oo='git commit -m "update"'
