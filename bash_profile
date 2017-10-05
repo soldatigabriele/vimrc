@@ -13,6 +13,12 @@ alias ii='git add .'
 alias oo='git commit -m "update"'
 alias pp='git push'
 
+function gcp() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
+
 alias scr='cd ~/Desktop/script'
 alias cdport='cd /Applications/MAMP/htdocs/Portfolio'
 alias cdhome='cd /Users/Gabri/Homestead'
