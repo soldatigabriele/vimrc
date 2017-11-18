@@ -62,5 +62,3 @@ export PATH="$CUDA_HOME/bin:$PATH"
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 
-# added by Anaconda3 4.4.0 installer
-export PATH="/Users/gabri/anaconda/bin:$PATH"

@@ -208,6 +208,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 
 "-----------Laravel-Specific--------"
+nmap <Leader>lr :e ~/Dropbox/Vagrant/Code/22group/propertystream/routes/web.php<cr>
 nmap <Leader>lr :e routes/web.php<cr>
 nmap <Leader>lm :!php artisan make:
 " find files into specific directories
