@@ -8,6 +8,7 @@ alias ga='git add'
 alias gaa='git add .'
 alias gca='git commit -a -m "update"'
 alias gp='git push'
+alias push='git commit -a -m "update" && git push'
 
 function gc() {
     git add .
