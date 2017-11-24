@@ -74,15 +74,15 @@ add to the field "Send text at start" in iTerm: Pref->Profile->General
 <br>
 source ~/.bash_profile; clear;
 
-<h3>UBUNTU</h3>
-<h2>install GVIM</h2>
+<h2>UBUNTU</h2>
+<h3>install GVIM</h3>
 sudo apt-get install vim-gnome
-<h2>map caps to escape</h2>
+<h3>map caps to escape</h3>
 
-<h2>Change font</h2>
+<h3>Change font</h3>
 dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
 
-<h3>FIX</h3>
-<h2>Vinegar</h2>
+<h2>FIX</h2>
+<h3>Vinegar</h3>
 If it is not going back with - 
 Substitute the bundle/vim-vinegar/plugin/vinegar.vim with fix/vinegar.vim 
