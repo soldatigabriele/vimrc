@@ -140,6 +140,9 @@ nmap <Leader>f :tag<space>
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 "nmap <Leader>ep :e ~/.vim/plugins.vim<cr>
 nmap <Leader>es :e ~/.vim/snippets/php.snippets<cr>
+" semicolon at the end of line
+inoremap ; <C-o>A;
+
 "nmap <Leader>pl :tabedit ~/.vim/plugins.vim<cr>
 "nmap <C-S> :w<cr>
 nmap <D-S> :w<cr>
