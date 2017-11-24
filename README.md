@@ -81,3 +81,8 @@ sudo apt-get install vim-gnome
 
 <h2>Change font</h2>
 dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
+
+<h3>FIX</h3>
+<h2>Vinegar</h2>
+If it is not going back with - 
+Substitute the bundle/vim-vinegar/plugin/vinegar.vim with fix/vinegar.vim 
