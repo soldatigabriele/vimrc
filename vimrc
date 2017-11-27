@@ -17,6 +17,14 @@ set guioptions-=R
 "case insensitive search
 set ignorecase
 set smartcase
+"indentazione
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
 "no error sound
 set noerrorbells visualbell t_vb=
 
@@ -141,7 +149,7 @@ nmap <Leader>ev :tabedit $MYVIMRC<cr>
 "nmap <Leader>ep :e ~/.vim/plugins.vim<cr>
 nmap <Leader>es :e ~/.vim/snippets/php.snippets<cr>
 " semicolon at the end of line
-inoremap ; <C-o>A;
+" inoremap ; <C-o>A;
 
 "nmap <Leader>pl :tabedit ~/.vim/plugins.vim<cr>
 "nmap <C-S> :w<cr>
