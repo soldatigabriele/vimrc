@@ -172,7 +172,7 @@ let NERDTreeHijackNetrw = 0
 
 "ctrlP
 nmap <C-P> :CtrlP<cr>
-nmap <C-R> :CtrlPBufTag<cr>
+" nmap <C-R> :CtrlPBufTag<cr>
 nmap <C-E> :CtrlPMRUFiles<cr>
 " conflict comment
 "nmap <leader>cc :ClearAllCtrlPCaches<cr>
@@ -241,7 +241,7 @@ let g:pydiction_menu_height = 3
 
 
 "----------------------Tagbar-------------------
-" nmap <C-R> :TagbarToggle<CR>
+nmap <C-R> :TagbarToggle<CR>
 " let Tlist_Ctags_Cmd='/usr/bin/ctags-exuberant'
 
 "----------------------Plugins-------------------
@@ -270,7 +270,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'vim-scripts/Pydiction'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'airblade/vim-gitgutter'
-" Plugin 'majutsushi/tagbar'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
