@@ -222,7 +222,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 
 "-----------Laravel-Specific--------"
-nmap <Leader>lr :e ~/Dropbox/Vagrant/Code/22group/propertystream/routes/web.php<cr>
+" nmap <Leader>lr :e ~/Dropbox/Vagrant/Code/22group/propertystream/routes/web.php<cr>
 nmap <Leader>lr :e routes/web.php<cr>
 nmap <Leader>lm :!php artisan make:
 " find files into specific directories
@@ -231,6 +231,8 @@ nmap <Leader><Leader>m :CtrlP<cr>app/
 nmap <Leader><Leader>v :CtrlP<cr>resources/views
 nmap <Leader><Leader>p :CtrlP<cr>
 
+"-----------Github-Specific--------"
+nmap <Leader>gp :!git add . && git commit -m 'update' && git push<cr><cr>
 "----------------------PyDiction-------------------
 filetype plugin on 
 let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict' 
