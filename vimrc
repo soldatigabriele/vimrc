@@ -164,13 +164,14 @@ let NERDTreeHijackNetrw = 0
 
 "ctrlP
 nmap <C-P> :CtrlP<cr>
-" nmap <C-R> :CtrlPBufTag<cr>
+nmap <C-R> :CtrlPBufTag<cr>
 nmap <C-E> :CtrlPMRUFiles<cr>
 " conflict comment
 "nmap <leader>cc :ClearAllCtrlPCaches<cr>
 
 "let g:ctrlp_custom_ignore = 'node_modules\Vendor\DS_Store\|git'
 let g:ctrlp_custom_ignore = { 'dir': 'vendor\|git\build$\|node_modules$' }
+" let g:ctrlp_match_window = 'right,order:ttb,min:1,max:30,results:30'
 let g:ctrlp_use_caching = 0
 
 "Greplace    use Ag for the search and replace
@@ -230,8 +231,8 @@ let g:pydiction_menu_height = 3
 
 
 "----------------------Tagbar-------------------
-nmap <C-R> :TagbarToggle<CR>
-let Tlist_Ctags_Cmd='/usr/bin/ctags-exuberant'
+" nmap <C-R> :TagbarToggle<CR>
+" let Tlist_Ctags_Cmd='/usr/bin/ctags-exuberant'
 
 "----------------------Plugins-------------------
 "so ~/.vim/plugins.vim
@@ -259,7 +260,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'vim-scripts/Pydiction'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'majutsushi/tagbar'
+" Plugin 'majutsushi/tagbar'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
