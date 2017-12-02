@@ -68,6 +68,16 @@ Once you have the binary you can move it to your bin folder as:
 <br>
 <br>
 sudo mv ctags /usr/bin/ctags-exuberant
+<br>
+<br>
+run mvim and do $ :!ctags -R in order to generate the tags
+<br>
+<br>
+<h4>Install Ag for search within the files</h4>
+Necessary to use Grep and Greplace
+<br>
+brew install the_silver_searcher
+
 
 <h3>Bash_profile</h3>
 add to the field "Send text at start" in iTerm: Pref->Profile->General

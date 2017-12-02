@@ -1,12 +1,19 @@
+/* PHP general snippets */
 
+snippet d
+	dd(${1});
 
 snippet e
 	echo '${1}';
 
-snippet pf 
-	public function ${1}()
+snippet $ 
+	$this->${1}
+
+/* Methods */
+snippet m 
+	public function ${1}(${2})
 	{
-		${2}
+		${3}
 	}
 
 snippet sf 
@@ -15,17 +22,63 @@ snippet sf
 		${2}
 	}
 
-snippet rg
-	Route::get('${1}','/${2}');
+/* Routing snippets */
 
-snippet rd
-	Route::delete('${1}','/${2}');
+snippet rg
+	Route::get('${1}','${2}@${3}');
 
 snippet rp
-	Route::post('${1}','/${2}');
+	Route::post('${1}','${2}@${3}');
 
-snippet rput
-	Route::put('${1}','/${2}');
+snippet rt
+	Route::any('${1}',function(){
+		${2}
+	});
 
-snippet $ 
-	$this->
+
+/* Eloquent Snippets */
+
+snippet where 
+	$${1} = ${2}::where('${3}',${4})${5}
+
+snippet w 
+	->where('${1}',${2})${3}
+
+snippet find 
+	$${1} = ${2}::find($3)${4}
+
+snippet a
+	->all()${1}
+
+snippet all
+	$${1} = ${2}::all()${3}
+
+snippet f
+	->find(${1})${2}
+
+snippet F
+	->first()${1}
+
+snippet g
+	->get()${1}
+
+snippet o
+	->orderBy('${1}')${2}
+
+snippet od
+	->orderBy('${1}', 'desc')${2}
+
+
+
+/* Blade Snippets */
+snippet bi
+	@if(${1} == ${2})
+		${3}
+	@endif
+
+snippet bf
+	@foreach($${1} as $${2})
+		${3}
+	@endif
+
+

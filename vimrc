@@ -75,7 +75,7 @@ function! NumberToggle()
   endif
 endfunc
 "toggle between relative numbers and normal numbers
-nnoremap <C-n> :call NumberToggle()<cr>
+nnoremap <leader>n :call NumberToggle()<cr>
 " remove relative numbers when losing window focus
 :au FocusLost * :set norelativenumber
 ":au FocusGained * :set relativenumber
@@ -144,7 +144,11 @@ endif
 " nmap <Tab> <C-P>
 
 "-----------Mapping-----------"
-nmap <Leader>f :tag<space>
+" CTags
+nmap <Leader>r :tag<space>
+nmap <Leader>gt :!ctags -R --exclude=.git --exclude=node_modules --exclude=vendor<cr>
+" go to next tag occurrency
+nmap <C-n> :tn<cr>
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 "nmap <Leader>ep :e ~/.vim/plugins.vim<cr>
 nmap <Leader>es :e ~/.vim/snippets/php.snippets<cr>
@@ -186,6 +190,8 @@ let g:ctrlp_use_caching = 0
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
 
+nmap <leader>f :Ag 
+
 "GitGutter
 set updatetime=250 
 
@@ -224,13 +230,18 @@ let g:airline#extensions#tabline#enabled = 1
 
 "-----------Laravel-Specific--------"
 " nmap <Leader>lr :e ~/Dropbox/Vagrant/Code/22group/propertystream/routes/web.php<cr>
+" let mapleader = \"'"        "change default leader key to comma 
 nmap <Leader>lr :e routes/web.php<cr>
 nmap <Leader>lm :!php artisan make:
 " find files into specific directories
-nmap <Leader><Leader>c :CtrlP<cr>app/Http/Controllers/
+nmap <Leader><Leader>c :set ignorecase<cr>:CtrlP<cr>app/Http/Controllers/
 nmap <Leader><Leader>m :CtrlP<cr>app/
-nmap <Leader><Leader>v :CtrlP<cr>resources/views
+" nmap <Leader><Leader>v :CtrlP<cr>resources/views
+nmap <Leader><Leader>c :e App/Http/Controllers<cr>
+nmap <Leader><Leader>m :e App<cr>
+nmap <Leader><Leader>v :e resources/views<cr>
 nmap <Leader><Leader>p :CtrlP<cr>
+nmap <Leader>. i$tab>
 
 "-----------Github-Specific--------"
 nmap <Leader>gp :!git add . && git commit -m 'update' && git push<cr><cr>
@@ -284,3 +295,13 @@ augroup autosourching
 	autocmd BufWritePost .vimrc source %
 augroup END
 
+
+
+
+" Notes and Tips
+"
+"
+" ,gt = generate tags excluding vendor and node folders
+" 'f  = find the methods
+" 
+"
