@@ -22,6 +22,14 @@ snippet sf
 		${2}
 	}
 
+snippet bt
+	public function ${1}()
+	{
+        return $this->belongsTo(${2}::class);
+    }
+
+
+
 /* Routing snippets */
 
 snippet rg
