@@ -4,6 +4,7 @@ export PATH="~/.composer/vendor/bin:$PATH"
 alias gs='git status'
 alias gl='git log'
 alias gb='git branch'
+alias ga='git add .'
 
 alias push='git add . && git commit -a -m "update" && git push'
 

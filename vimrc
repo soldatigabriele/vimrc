@@ -27,6 +27,8 @@ set shiftwidth=4
 set expandtab
 "no error sound
 set noerrorbells visualbell t_vb=
+" set json highligthing
+autocmd BufNewFile,BufRead *.json set ft=javascript
 
 "----------Copy and paste-------------"
 " avoid copying the replaced word
@@ -282,6 +284,8 @@ Plugin 'vim-scripts/Pydiction'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'majutsushi/tagbar'
+" colors Vue js
+Plugin 'posva/vim-vue'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
