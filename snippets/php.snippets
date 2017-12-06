@@ -16,18 +16,17 @@ snippet m
 		${3}
 	}
 
+snippet bt
+	public function ${1}()
+	{
+		return $this->belongsTo(${2}::class);
+	}
+
 snippet sf 
 	public static function ${1}()
 	{
 		${2}
 	}
-
-snippet bt
-	public function ${1}()
-	{
-        return $this->belongsTo(${2}::class);
-    }
-
 
 
 /* Routing snippets */
