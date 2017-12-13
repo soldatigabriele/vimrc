@@ -28,11 +28,14 @@ alias cdport='cd /Applications/MAMP/htdocs/Portfolio'
 alias cdhome='cd /Users/Gabri/Homestead'
 alias cdcode='cd /Users/Gabri/Dropbox/Vagrant/Code' 
 alias cd22='cd /Users/Gabri/Dropbox/Vagrant/Code/22group' 
-alias cdsa='cd /Users/gabri/Dropbox/Vagrant/Code/saasmanagement'
 alias cdwp='cd ~/Dropbox/Vagrant/Code/22group/wordpress/wp-content/plugins'
 alias cdvim='cd ~/.vim'
 alias cdpy='cd ~/Dropbox/python_tutorial'
 alias cdtf='cd /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/tensorflow/models/image'
+
+#aliases SAASMANAGEMENT
+alias cdsa='cd /Users/gabriele/code/coherence'
+alias code='cd /Users/gabriele/code/'
 
 alias pa='php artisan' 
 alias tt='vendor/bin/phpunit' 
