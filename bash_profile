@@ -19,7 +19,8 @@ function gcp() {
 }
 
 
-alias l='ls -hl'
+alias sb='source ~/.vim/bash_profile'
+alias a='ls -hl'
 alias ll='ls -hlSG'
 alias scr='cd ~/Desktop/script'
 alias cdport='cd /Applications/MAMP/htdocs/Portfolio'
