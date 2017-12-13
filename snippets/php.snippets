@@ -16,11 +16,18 @@ snippet m
 		${3}
 	}
 
+snippet bt
+	public function ${1}()
+	{
+		return $this->belongsTo(${2}::class);
+	}
+
 snippet sf 
 	public static function ${1}()
 	{
 		${2}
 	}
+
 
 /* Routing snippets */
 
@@ -40,35 +47,24 @@ snippet rt
 
 snippet where 
 	$${1} = ${2}::where('${3}',${4})${5}
-
 snippet w 
 	->where('${1}',${2})${3}
-
 snippet find 
 	$${1} = ${2}::find($3)${4}
-
 snippet a
 	->all()${1}
-
 snippet all
 	$${1} = ${2}::all()${3}
-
 snippet f
 	->find(${1})${2}
-
 snippet F
 	->first()${1}
-
 snippet g
 	->get()${1}
-
 snippet o
 	->orderBy('${1}')${2}
-
 snippet od
 	->orderBy('${1}', 'desc')${2}
-
-
 
 /* Blade Snippets */
 snippet bi

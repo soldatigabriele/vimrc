@@ -27,6 +27,8 @@ set shiftwidth=4
 set expandtab
 "no error sound
 set noerrorbells visualbell t_vb=
+" set json highligthing
+autocmd BufNewFile,BufRead *.json set ft=javascript
 
 "----------Copy and paste-------------"
 " avoid copying the replaced word
@@ -232,16 +234,36 @@ let g:airline#extensions#tabline#enabled = 1
 " nmap <Leader>lr :e ~/Dropbox/Vagrant/Code/22group/propertystream/routes/web.php<cr>
 " let mapleader = \"'"        "change default leader key to comma 
 nmap <Leader>lr :e routes/web.php<cr>
-nmap <Leader>lm :!php artisan make:
+nmap <Leader>lc :e composer.json<cr>
+nmap <Leader>le :e .env<cr>
+nmap <Leader>pam :!php artisan make:
+nmap <Leader>pat :!php artisan tinker
+nmap <Leader>lmm :!php artisan make:model 
+nmap <Leader>lmc :!php artisan make:controller
+nmap <Leader>lmi :!php artisan make:migration
+nmap <Leader>dm :!php artisan migrate
+
+nmap <Leader>cda :!composer dump-autoload<cr>
+let mapleader = "\'" 
+nmap <Leader>t :!vendor/bin/phpunit<cr>
+let mapleader = ','         
 " find files into specific directories
+
 nmap <Leader><Leader>c :set ignorecase<cr>:CtrlP<cr>app/Http/Controllers/
-nmap <Leader><Leader>m :CtrlP<cr>app/
-" nmap <Leader><Leader>v :CtrlP<cr>resources/views
-nmap <Leader><Leader>c :e App/Http/Controllers<cr>
-nmap <Leader><Leader>m :e App<cr>
-nmap <Leader><Leader>v :e resources/views<cr>
-nmap <Leader><Leader>p :CtrlP<cr>
-nmap <Leader>. i$tab>
+nmap <Leader>c :e App/Http/Controllers<cr>
+
+nmap <Leader><Leader>m :CtrlP<cr>App
+nmap <Leader>m :e App<cr>
+
+nmap <Leader><Leader>v :CtrlP<cr>resources/views
+nmap <Leader>v :e resources/views<cr>
+
+nmap <Leader><Leader>t :CtrlP<cr>tests
+nmap <Leader>t :e tests<cr>
+
+nmap <Leader>a :e resources/assets/js<cr>
+
+" nmap <Leader>p :CtrlP<cr>
 
 "-----------Github-Specific--------"
 nmap <Leader>gp :!git add . && git commit -m 'update' && git push<cr><cr>
@@ -282,6 +304,8 @@ Plugin 'vim-scripts/Pydiction'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'majutsushi/tagbar'
+" colors Vue js
+Plugin 'posva/vim-vue'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
