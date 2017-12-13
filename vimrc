@@ -234,7 +234,19 @@ let g:airline#extensions#tabline#enabled = 1
 " nmap <Leader>lr :e ~/Dropbox/Vagrant/Code/22group/propertystream/routes/web.php<cr>
 " let mapleader = \"'"        "change default leader key to comma 
 nmap <Leader>lr :e routes/web.php<cr>
-nmap <Leader>lm :!php artisan make:
+nmap <Leader>lc :e composer.json<cr>
+nmap <Leader>le :e .env<cr>
+nmap <Leader>pam :!php artisan make:
+nmap <Leader>pat :!php artisan tinker
+nmap <Leader>lmm :!php artisan make:model 
+nmap <Leader>lmc :!php artisan make:controller
+nmap <Leader>lmi :!php artisan make:migration
+nmap <Leader>dm :!php artisan migrate
+
+nmap <Leader>cda :!composer dump-autoload<cr>
+let mapleader = "\'" 
+nmap <Leader>t :!vendor/bin/phpunit<cr>
+let mapleader = ','         
 " find files into specific directories
 
 nmap <Leader><Leader>c :set ignorecase<cr>:CtrlP<cr>app/Http/Controllers/
@@ -246,12 +258,12 @@ nmap <Leader>m :e App<cr>
 nmap <Leader><Leader>v :CtrlP<cr>resources/views
 nmap <Leader>v :e resources/views<cr>
 
+nmap <Leader><Leader>t :CtrlP<cr>tests
+nmap <Leader>t :e tests<cr>
+
 nmap <Leader>a :e resources/assets/js<cr>
 
-nmap <Leader>p :CtrlP<cr>
-
-" Javascript
-nmap <Leader>t i this.
+" nmap <Leader>p :CtrlP<cr>
 
 "-----------Github-Specific--------"
 nmap <Leader>gp :!git add . && git commit -m 'update' && git push<cr><cr>

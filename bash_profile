@@ -3,7 +3,7 @@ export PATH="~/.composer/vendor/bin:$PATH"
 
 alias gs='git status'
 alias gl='git log'
-alias gb='git branch'
+alias gb='git branch -v'
 alias ga='git add .'
 
 alias push='git add . && git commit -a -m "update" && git push'
@@ -34,6 +34,8 @@ alias cdpy='cd ~/Dropbox/python_tutorial'
 alias cdtf='cd /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/tensorflow/models/image'
 
 alias pa='php artisan' 
+alias tt='vendor/bin/phpunit' 
+alias ttf='vendor/bin/phpunit --filter' 
 alias vs='vagrant ssh' 
 alias vh='vagrant halt' 
 alias vu='vagrant up' 
