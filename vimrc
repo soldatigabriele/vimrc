@@ -148,7 +148,8 @@ endif
 "-----------Mapping-----------"
 " CTags
 nmap <Leader>r :tag<space>
-nmap <Leader>gt :!ctags -R --exclude=.git --exclude=node_modules --exclude=vendor<cr>
+nmap <Leader>gt :!ctags -R --exclude=.git --exclude=node_modules<cr>
+"nmap <Leader>gt :!ctags -R --exclude=.git --exclude=node_modules --exclude=vendor<cr>
 " go to next tag occurrency
 nmap <C-n> :tn<cr>
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
@@ -174,6 +175,7 @@ endif
 
 "nerdtree
 nmap <D-1> :NERDTreeToggle<cr>
+nmap <D-2> :NERDTreeFind<cr>
 let NERDTreeHijackNetrw = 0
 
 "ctrlP
@@ -217,7 +219,17 @@ map  <Leader>b <Plug>(easymotion-bd-b)
 
 "powerline
 "always display status line 	
-:set laststatus=2
+set laststatus=2
+set statusline +=%1*\ %n\ %*            "buffer number
+set statusline +=%5*%{&ff}%*            "file format
+set statusline +=%3*%y%*                "file type
+set statusline +=%4*\ %<%F%*            "full path
+set statusline +=%2*%m%*                "modified flag
+set statusline +=%1*%=%5l%*             "current line
+set statusline +=%2*/%L%*               "total lines
+set statusline +=%1*%4v\ %*             "virtual column number
+set statusline +=%2*0x%04B\ %*          "character under cursor
+
 "load patched fonts
 let g:airline_powerline_fonts = 1
 " hide words count
@@ -294,7 +306,7 @@ Plugin 'rking/ag.vim'
 Plugin 'skwp/greplace.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'msanders/snipmate.vim'
-Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline'
 "Git plugin 
 Plugin 'tpope/vim-fugitive'
 "Plugin 'klen/python-mode'
