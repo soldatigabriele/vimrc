@@ -2,7 +2,7 @@ export BASH_CONF="bash_profile"
 export PATH="~/.composer/vendor/bin:$PATH"
 
 alias gs='git status'
-alias gl='git log'
+alias gl='git log --oneline'
 alias gb='git branch -v'
 alias ga='git add .'
 
