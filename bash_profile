@@ -37,6 +37,7 @@ alias cdsa='cd /Users/gabriele/code/coherence'
 alias code='cd /Users/gabriele/code/'
 
 alias pa='php artisan' 
+alias mv='php artisan make:view ' 
 alias dr='php artisan migrate:refresh --seed'
 alias tt='vendor/bin/phpunit' 
 alias ttf='vendor/bin/phpunit --filter' 
