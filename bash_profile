@@ -6,12 +6,11 @@ alias gl='git log'
 alias gb='git branch -v'
 alias ga='git add .'
 
-alias push='git add . && git commit -a -m "update" && git push'
+alias gc='git add . && git commit -m '
+alias nb='git checkout -b '
+alias cb='git checkout '
 
-function gc() {
-    git add .
-    git commit -a -m "$1"
-}
+alias push='git add . && git commit -a -m "update" && git push'
 
 function gcp() {
     git add .
