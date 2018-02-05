@@ -4,6 +4,7 @@ export PATH="~/.composer/vendor/bin:$PATH"
 alias gs='git status'
 alias gl='git log --oneline'
 alias gb='git branch -v'
+alias bd='git branch -d '
 alias ga='git add .'
 
 alias gc='git add . && git commit -m '
@@ -33,13 +34,16 @@ alias cdpy='cd ~/Dropbox/python_tutorial'
 alias cdtf='cd /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/tensorflow/models/image'
 
 #aliases SAASMANAGEMENT
-alias cdsa='cd /Users/gabriele/code/coherence'
+alias cdsa='cd /Users/gabriele/code/holiday'
 alias code='cd /Users/gabriele/code/'
 
 alias pa='php artisan' 
+alias cda='composer dump-autoload' 
+alias nrd='npm run dev' 
 alias mv='php artisan make:view ' 
+alias ql='php artisan queue:listen --tries=3' 
 alias dr='php artisan migrate:refresh --seed'
-alias st='php artisan iseed permission_role,permissions,role_user,roles,users --force'
+alias st='php artisan iseed permission_role,permissions,role_user,roles --force'
 alias tt='vendor/bin/phpunit' 
 alias ttf='vendor/bin/phpunit --filter' 
 alias vs='vagrant ssh' 
