@@ -38,6 +38,7 @@ alias cdsa='cd /Users/gabriele/code/holiday'
 alias code='cd /Users/gabriele/code/'
 
 alias pa='php artisan' 
+alias pat='php artisan tinker' 
 alias cda='composer dump-autoload' 
 alias nrd='npm run dev' 
 alias mv='php artisan make:view ' 
