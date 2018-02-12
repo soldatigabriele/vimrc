@@ -36,6 +36,10 @@ alias cdtf='cd /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/s
 #aliases SAASMANAGEMENT
 alias cdsa='cd /Users/gabriele/code/holiday'
 alias code='cd /Users/gabriele/code/'
+#holiday live server
+alias lho='ssh root@138.68.165.181'
+#Ai API live server
+alias lai='ssh root@159.65.20.240'
 
 alias pa='php artisan' 
 alias pat='php artisan tinker' 
