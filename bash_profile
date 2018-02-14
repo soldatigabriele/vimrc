@@ -10,6 +10,7 @@ alias ga='git add .'
 alias gc='git add . && git commit -m '
 alias nb='git checkout -b '
 alias cb='git checkout '
+alias bm='git checkout master'
 
 alias push='git add . && git commit -a -m "update" && git push'
 
@@ -40,6 +41,8 @@ alias code='cd /Users/gabriele/code/'
 alias lho='ssh root@138.68.165.181'
 #Ai API live server
 alias lai='ssh root@159.65.20.240'
+alias dep='bash deploy.sh'
+
 
 alias pa='php artisan' 
 alias pat='php artisan tinker' 
