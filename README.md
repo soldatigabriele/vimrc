@@ -45,15 +45,18 @@ ln -s ~/.vim/zshrc ~/.zshrc
 ``` 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
+
 Change the theme to Agnoster
 <br>
 Fonts for powerline:
 ``` 
 cd ~/Desktop && git clone https://github.com/powerline/fonts.git 
 ```
+
 ```
 sh ./install.sh && rm -R ~/Desktop/Fonts
 ```
+
 Select the font from the terminal.
 
 <h4>Text Highlight for terminal</h4>
