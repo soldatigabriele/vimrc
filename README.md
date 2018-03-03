@@ -37,6 +37,8 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 <br>
 ln -s ~/.vim/bash_profile ~/.bash_profile
 <br>
+ln -s ~/.vim/zshrc ~/.zshrc
+<br>
 
 <h3>Powerline terminal</h3>
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
