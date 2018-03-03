@@ -42,8 +42,10 @@ ln -s ~/.vim/zshrc ~/.zshrc
 
 <h3>iTerm2</h3>
 <h5>Oh My ZSH</h5>
-``` 
+
+```
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 ```
 
 Change the theme to Agnoster
@@ -68,9 +70,11 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 <h5>Autosuggestion</h5>
 <br>
+
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
+
 <br>
 add in .zshrc:
 <br>
