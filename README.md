@@ -40,17 +40,42 @@ ln -s ~/.vim/bash_profile ~/.bash_profile
 ln -s ~/.vim/zshrc ~/.zshrc
 <br>
 
-<h3>Powerline terminal</h3>
+<h3>iTerm2</h3>
+<h5>Oh My ZSH</h5>
+``` 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+Change the theme to Agnoster
 <br>
-Change theme to "agnoster"
+Fonts for powerline:
+``` 
+cd ~/Desktop && git clone https://github.com/powerline/fonts.git 
+```
+```
+sh ./install.sh && rm -R ~/Desktop/Fonts
+```
+Select the font from the terminal.
+
+<h4>Text Highlight for terminal</h4>
+
+```
+brew install zsh-syntax-highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+```
+
+<h5>Autosuggestion</h5>
 <br>
-https://github.com/powerline/fonts/blob/master/Inconsolata/Inconsolata%20for%20Powerline.otf?raw=true
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+```
 <br>
-https://github.com/powerline/fonts/blob/master/FiraMono/FuraMono-Regular%20Powerline.otf?raw=true
+add in .zshrc:
 <br>
-Double click and install it. Then select it from the iterm2 font.
+plugins=(zsh-autosuggestions)
 <br>
+By default, word jumps (option + → or ←) and word deletions (option + backspace) do not work. To enable these, go to "iTerm → Preferences → Profiles → Keys → Load Preset... → Natural Text Editing → Boom! Head explodes"
+<br>
+
 
 <h3>CTags problem</h3>
 
