@@ -48,7 +48,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 ```
 
-Change the theme to Agnoster
+Change the theme to Agnoster (if not already selected)
 <br>
 Fonts for powerline:
 ``` 
@@ -58,7 +58,7 @@ sh ./install.sh && rm -R ~/Desktop/Fonts
 
 Select the font from the terminal.
 
-<h4>Text Highlight for terminal</h4>
+<h5>Text Highlight for terminal</h5>
 
 ```
 brew install zsh-syntax-highlighting
