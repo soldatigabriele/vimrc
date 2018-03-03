@@ -53,9 +53,6 @@ Change the theme to Agnoster
 Fonts for powerline:
 ``` 
 cd ~/Desktop && git clone https://github.com/powerline/fonts.git 
-```
-
-```
 sh ./install.sh && rm -R ~/Desktop/Fonts
 ```
 
