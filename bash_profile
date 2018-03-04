@@ -56,7 +56,7 @@ alias tt='vendor/bin/phpunit'
 alias ttf='vendor/bin/phpunit --filter' 
 alias vs='vagrant ssh' 
 alias vh='vagrant halt' 
-alias vu='vagrant up' 
+alias vu='vagrant up'
 alias gw='grunt watch' 
 alias jn='jupyter notebook'
 
