@@ -77,6 +77,7 @@ alias lho='ssh root@138.68.165.181'
 alias lai='ssh root@159.65.20.240'
 alias dep='bash deploy.sh'
 
+alias ldo='ssh root@178.62.47.7'
 
 alias pa='php artisan' 
 alias pat='php artisan tinker' 
