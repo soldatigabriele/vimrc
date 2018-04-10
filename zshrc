@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/gabri/.oh-my-zsh
+export ZSH=/Users/gabriele/.oh-my-zsh
 source ~/.bash_profile; clear;
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -68,11 +70,16 @@ alias cdvim='cd ~/.vim'
 alias cdpy='cd ~/Dropbox/python_tutorial'
 alias cdtf='cd /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/tensorflow/models/image'
 
-#aliases SAASMANAGEMENT
-alias cdsa='cd /Users/gabriele/code/holiday'
+##aliases SAASMANAGEMENT
+#code
 alias code='cd /Users/gabriele/code/'
+alias pac='cd /Users/gabriele/code/packages'
+alias lml='cd /Users/gabriele/code/packages/laravel-magic-login'
+alias lle='cd /Users/gabriele/code/packages/laravel-leadgen-export'
+
 #holiday live server
 alias lho='ssh root@138.68.165.181'
+alias tho='cd /Users/gabriele/code/holiday'
 #Ai API live server
 alias lai='ssh root@159.65.20.240'
 alias dep='bash deploy.sh'
@@ -82,6 +89,7 @@ alias pa='php artisan'
 alias pat='php artisan tinker' 
 alias cda='composer dump-autoload' 
 alias nrd='npm run dev' 
+alias nrw='npm run watch' 
 alias mv='php artisan make:view ' 
 alias ql='php artisan queue:listen --tries=3' 
 alias dr='php artisan migrate:refresh --seed'
