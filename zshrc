@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/gabriele/.oh-my-zsh
-source ~/.bash_profile; clear;
+
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 
@@ -75,7 +75,9 @@ alias cdtf='cd /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/s
 alias code='cd /Users/gabriele/code/'
 alias pac='cd /Users/gabriele/code/packages'
 alias lml='cd /Users/gabriele/code/packages/laravel-magic-login'
+alias pacm='cd /Users/gabriele/code/packages/laravel-messenger'
 alias lle='cd /Users/gabriele/code/packages/laravel-leadgen-export'
+alias ker='cd /Users/gabriele/code/products-kernel'
 
 #holiday live server
 alias lho='ssh root@138.68.165.181'

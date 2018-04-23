@@ -1,3 +1,5 @@
+source ~/.vim/zshrc
+
 export BASH_CONF="bash_profile"
 export PATH="~/.composer/vendor/bin:$PATH"
 
