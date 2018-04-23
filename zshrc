@@ -86,15 +86,20 @@ alias tho='cd /Users/gabriele/code/holiday'
 alias lai='ssh root@159.65.20.240'
 alias dep='bash deploy.sh'
 
+alias ldo='ssh root@178.62.47.7'
 
 alias pa='php artisan' 
 alias pat='php artisan tinker' 
 alias cda='composer dump-autoload' 
 alias nrd='npm run dev' 
+<<<<<<< HEAD
 alias nrw='npm run watch' 
 alias mv='php artisan make:view ' 
+=======
+>>>>>>> 313d12550d4e45ee46afcd49aab8817115d6e0d5
 alias ql='php artisan queue:listen --tries=3' 
-alias dr='php artisan migrate:refresh --seed'
+alias pacc='php artisan config:cache'
+alias dr='php artisan config:clear && php artisan migrate:refresh --seed'
 alias st='php artisan iseed permission_role,permissions,role_user,roles --force'
 alias tt='vendor/bin/phpunit' 
 alias ttf='vendor/bin/phpunit --filter' 
