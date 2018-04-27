@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/gabri/.oh-my-zsh
 source ~/.bash_profile; clear;
+export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -71,6 +72,7 @@ alias cdtf='cd /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/s
 #aliases SAASMANAGEMENT
 alias cdsa='cd /Users/gabriele/code/holiday'
 alias code='cd /Users/gabriele/code/'
+alias nrw='npm run watch'
 #holiday live server
 alias lho='ssh root@138.68.165.181'
 #Ai API live server
