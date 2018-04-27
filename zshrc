@@ -1,8 +1,6 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/gabriele/.oh-my-zsh
-
+export ZSH=/Users/gabri/.oh-my-zsh
 export PATH="$HOME/.composer/vendor/bin:$PATH"
-
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -79,6 +77,7 @@ alias pacm='cd /Users/gabriele/code/packages/laravel-messenger'
 alias lle='cd /Users/gabriele/code/packages/laravel-leadgen-export'
 alias ker='cd /Users/gabriele/code/products-kernel'
 
+
 #holiday live server
 alias lho='ssh root@138.68.165.181'
 alias tho='cd /Users/gabriele/code/holiday'
@@ -92,11 +91,7 @@ alias pa='php artisan'
 alias pat='php artisan tinker' 
 alias cda='composer dump-autoload' 
 alias nrd='npm run dev' 
-<<<<<<< HEAD
 alias nrw='npm run watch' 
-alias mv='php artisan make:view ' 
-=======
->>>>>>> 313d12550d4e45ee46afcd49aab8817115d6e0d5
 alias ql='php artisan queue:listen --tries=3' 
 alias pacc='php artisan config:cache'
 alias dr='php artisan config:clear && php artisan migrate:refresh --seed'
