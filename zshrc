@@ -2,6 +2,7 @@
 export ZSH=/Users/gabriele/.oh-my-zsh
 
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+export XDEBUG_CONFIG="idekey=VSCODE"
 
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -37,18 +38,22 @@ alias zshconfig="mvim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
+alias diff='git diff'
 alias gs='git status'
 alias gl='git log --oneline'
 alias gb='git branch -v'
-alias bd='git branch -d '
 alias ga='git add .'
+alias pull='git pull'
+alias push='git push'
+alias fetch='git fetch && git checkout '
 
 alias gc='git add . && git commit -m '
 alias nb='git checkout -b '
 alias cb='git checkout '
+alias bd='git branch -d '
 alias bm='git checkout master'
 
-alias push='git add . && git commit -a -m "update" && git push'
+alias gps='git add . && git commit -a -m "bug fixed" && git push'
 
 function gcp() {
     git add .
@@ -58,6 +63,7 @@ function gcp() {
 
 
 alias sb='source ~/.vim/bash_profile'
+alias sz='source ~/.vim/zshrc'
 alias a='ls -hl'
 alias ll='ls -hlSG'
 alias scr='cd ~/Desktop/script'
@@ -73,11 +79,8 @@ alias cdtf='cd /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/s
 ##aliases SAASMANAGEMENT
 #code
 alias code='cd /Users/gabriele/code/'
-alias pac='cd /Users/gabriele/code/packages'
-alias lml='cd /Users/gabriele/code/packages/laravel-magic-login'
-alias pacm='cd /Users/gabriele/code/packages/laravel-messenger'
-alias lle='cd /Users/gabriele/code/packages/laravel-leadgen-export'
-alias ker='cd /Users/gabriele/code/products-kernel'
+alias buyvia='cd /Users/gabriele/code/ProductsWebsites/buyvia'
+alias kernel='cd /Users/gabriele/code/ProductsWebsites/buyvia/vendor/saas-management/products-kernel'
 
 #holiday live server
 alias lho='ssh root@138.68.165.181'
@@ -92,14 +95,10 @@ alias pa='php artisan'
 alias pat='php artisan tinker' 
 alias cda='composer dump-autoload' 
 alias nrd='npm run dev' 
-<<<<<<< HEAD
 alias nrw='npm run watch' 
-alias mv='php artisan make:view ' 
-=======
->>>>>>> 313d12550d4e45ee46afcd49aab8817115d6e0d5
 alias ql='php artisan queue:listen --tries=3' 
 alias pacc='php artisan config:cache'
-alias dr='php artisan config:clear && php artisan migrate:refresh --seed'
+alias dr='cda && php artisan config:clear && php artisan migrate:refresh --seed'
 alias st='php artisan iseed permission_role,permissions,role_user,roles --force'
 alias tt='vendor/bin/phpunit' 
 alias ttf='vendor/bin/phpunit --filter' 
