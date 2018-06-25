@@ -1,3 +1,6 @@
+eval "$(ssh-agent -s)"
+ssh-add -K ~/.ssh/do_rsa
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/gabri/.oh-my-zsh
 export PATH="$HOME/.composer/vendor/bin:$PATH"
