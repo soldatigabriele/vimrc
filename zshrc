@@ -1,9 +1,10 @@
-# Path to your oh-my-zsh installation.
-export ZSH=/Users/gabriele/.oh-my-zsh
+eval "$(ssh-agent -s)"
+ssh-add -K ~/.ssh/do_rsa
 
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/gabri/.oh-my-zsh
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export XDEBUG_CONFIG="idekey=VSCODE"
-
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -81,6 +82,7 @@ alias cdtf='cd /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/s
 alias code='cd /Users/gabriele/code/'
 alias buyvia='cd /Users/gabriele/code/ProductsWebsites/buyvia'
 alias kernel='cd /Users/gabriele/code/ProductsWebsites/buyvia/vendor/saas-management/products-kernel'
+
 
 #holiday live server
 alias lho='ssh root@138.68.165.181'
