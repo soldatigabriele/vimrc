@@ -4,7 +4,7 @@ ssh-add -K ~/.ssh/do_rsa
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/gabri/.oh-my-zsh
 export PATH="$HOME/.composer/vendor/bin:$PATH"
-export XDEBUG_CONFIG="idekey=VSCODE"
+#export XDEBUG_CONFIG="idekey=VSCODE"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -69,9 +69,9 @@ alias a='ls -hl'
 alias ll='ls -hlSG'
 alias scr='cd ~/Desktop/script'
 alias cdport='cd /Applications/MAMP/htdocs/Portfolio'
-alias cdhome='cd /Users/Gabri/Homestead'
-alias cdcode='cd /Users/Gabri/Dropbox/Vagrant/Code' 
-alias cd22='cd /Users/Gabri/Dropbox/Vagrant/Code/22group' 
+alias cdhome='cd $HOME/Homestead'
+alias cdcode='cd $HOME/Dropbox/Vagrant/Code' 
+alias cd22='cd $HOME/Dropbox/Vagrant/Code/22group' 
 alias cdwp='cd ~/Dropbox/Vagrant/Code/22group/wordpress/wp-content/plugins'
 alias cdvim='cd ~/.vim'
 alias cdpy='cd ~/Dropbox/python_tutorial'
@@ -79,14 +79,14 @@ alias cdtf='cd /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/s
 
 ##aliases SAASMANAGEMENT
 #code
-alias code='cd /Users/gabriele/code/'
-alias buyvia='cd /Users/gabriele/code/ProductsWebsites/buyvia'
-alias kernel='cd /Users/gabriele/code/ProductsWebsites/buyvia/vendor/saas-management/products-kernel'
+alias code='cd $HOME/code/'
+alias buyvia='cd $HOME/code/ProductsWebsites/buyvia'
+alias kernel='cd $HOME/code/ProductsWebsites/buyvia/vendor/saas-management/products-kernel'
 
 
 #holiday live server
 alias lho='ssh root@138.68.165.181'
-alias tho='cd /Users/gabriele/code/holiday'
+alias tho='cd $HOME/code/holiday'
 #Ai API live server
 alias lai='ssh root@159.65.20.240'
 alias dep='bash deploy.sh'
