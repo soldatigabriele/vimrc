@@ -35,6 +35,9 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
+# enable vi mode in terminal
+bindkey -v
+
 alias zshconfig="mvim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
