@@ -43,6 +43,8 @@ alias zshconfig="mvim ~/.zshrc"
 
 
 alias diff='git diff'
+alias stash='git add . && git stash'
+alias stasha='git stash apply'
 alias gs='git status'
 alias gl='git log --oneline'
 alias gb='git branch -v'
