@@ -37,8 +37,8 @@ alias cdpy='cd ~/Dropbox/python_tutorial'
 alias cdtf='cd /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/tensorflow/models/image'
 
 #aliases SAASMANAGEMENT
-alias cdsa='cd /Users/gabriele/code/holiday'
-alias code='cd /Users/gabriele/code/'
+alias cdsa='cd $HOME/code/holiday'
+alias code='cd $HOME/code/'
 #holiday live server
 alias lho='ssh root@138.68.165.181'
 #Ai API live server

@@ -85,6 +85,7 @@ alias cdtf='cd /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/s
 alias code='cd $HOME/code/'
 alias buyvia='cd $HOME/code/ProductsWebsites/buyvia'
 alias kernel='cd $HOME/code/ProductsWebsites/buyvia/vendor/saas-management/products-kernel'
+alias quiz='cd $HOME/code/laravel-quiz'
 
 
 #holiday live server
@@ -112,8 +113,15 @@ alias vs='vagrant ssh'
 alias vh='vagrant halt' 
 alias vu='vagrant up' 
 alias gw='grunt watch' 
+#alias Python
 alias jn='jupyter notebook'
+alias pm='python manage.py'
+alias pmr='python manage.py runserver'
+alias pmc='python manage.py check'
+alias pmsh='python manage.py shell'
+alias pmst='python manage.py startapp'
 
-alias tf='source ~/tensorflow/bin/activate'
+alias tf='source $HOME/tensorflow/bin/activate'
+alias dj='source $HOME/.django/bin/activate'
 alias tb='tensorboard --logdir=log'
 
