@@ -119,3 +119,19 @@ alias jn='jupyter notebook'
 alias tf='source ~/tensorflow/bin/activate'
 alias tb='tensorboard --logdir=log'
 
+# Print the logs
+function ll {
+    echo "Printing contents of Laravel Log File"
+    echo "Press Ctrl + C to exit"
+    echo "Tip: Type 'log.c' to clear contents of Laravel Log File"
+    tail -f -n 450 storage/logs/laravel*.log \
+    | grep -i -E \
+    "^\[\d{4}\-\d{2}\-\d{2} \d{2}:\d{2}:\d{2}\]|Next [\w\W]+?\:" \
+    --color 
+}
+
+# Plear the logs
+function lc {
+    echo "Clearing contents of Laravel Log File"
+    echo > storage/logs/laravel*.log
+}
