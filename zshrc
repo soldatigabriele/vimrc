@@ -2,7 +2,7 @@ eval "$(ssh-agent -s)"
 ssh-add -K ~/.ssh/do_rsa
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/gabri/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 #export XDEBUG_CONFIG="idekey=VSCODE"
 
