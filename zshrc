@@ -70,7 +70,7 @@ function gcp() {
 
 alias sb='source ~/.vim/bash_profile'
 alias sz='source ~/.vim/zshrc'
-alias a='ls -Fhl'
+alias a='ls -Fhla'
 alias ll='ls -FhlSG'
 alias scr='cd ~/Desktop/script'
 alias cdport='cd /Applications/MAMP/htdocs/Portfolio'
