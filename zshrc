@@ -88,6 +88,7 @@ alias code='cd $HOME/code/'
 alias buyvia='cd $HOME/code/ProductsWebsites/buyvia'
 alias kernel='cd $HOME/code/ProductsWebsites/buyvia/vendor/saas-management/products-kernel'
 alias quiz='cd $HOME/code/laravel-quiz'
+alias kernellink='ln -s $HOME/code/ProductsWebsites/products-kernel  $HOME/code/ProductsWebsites/buyvia/vendor/saas-management/products-kernel'
 
 
 #holiday live server
