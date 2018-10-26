@@ -25,7 +25,6 @@ function gcp() {
 
 alias sb='source ~/.vim/bash_profile'
 alias a='ls -hl'
-alias ll='ls -hlSG'
 alias scr='cd ~/Desktop/script'
 alias cdport='cd /Applications/MAMP/htdocs/Portfolio'
 alias cdhome='cd $HOME/Homestead'
