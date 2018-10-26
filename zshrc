@@ -46,26 +46,30 @@ alias diff='git diff'
 alias stash='git add . && git stash'
 alias stasha='git stash apply'
 alias gs='git status'
-alias gl='git log --oneline --graph'
-alias gb='git branch -v'
+alias gl='git log'
+alias glg='git log --oneline --graph'
+alias gb='git branch'
+alias gbv='git branch -v'
+alias gbr='git branch -r'
 alias ga='git add .'
+alias gap='git add -p'
 alias pull='git pull'
 alias push='git push'
-alias fetch='git fetch && git checkout '
+alias gf='git fetch && git checkout '
+alias fetch='gf'
 
-alias gc='git add . && git commit -m '
+alias gc='git commit -m '
 alias nb='git checkout -b '
 alias cb='git checkout '
 alias bd='git branch -d '
 alias bm='git checkout master'
 
-alias gps='git add . && git commit -a -m "bug fixed" && git push'
-
-function gcp() {
-    git add .
-    git commit -a -m "$1"
-    git push
-}
+# alias gps='git add . && git commit -a -m "bug fixed" && git push'
+# function gcp() {
+#     git add .
+#     git commit -a -m "$1"
+#     git push
+# }
 
 
 alias sb='source ~/.vim/bash_profile'
