@@ -4,7 +4,6 @@ ssh-add -K ~/.ssh/do_rsa
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export PATH="$HOME/.composer/vendor/bin:$PATH"
-#export XDEBUG_CONFIG="idekey=VSCODE"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -17,11 +16,6 @@ export UPDATE_ZSH_DAYS=3
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -39,9 +33,9 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 bindkey -v
 
 alias zshconfig="mvim ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
+## Aliases GIT
 alias diff='git diff'
 alias stash='git add . && git stash'
 alias stasha='git stash apply'
@@ -64,14 +58,6 @@ alias cb='git checkout '
 alias bd='git branch -d '
 alias bm='git checkout master'
 
-# alias gps='git add . && git commit -a -m "bug fixed" && git push'
-# function gcp() {
-#     git add .
-#     git commit -a -m "$1"
-#     git push
-# }
-
-
 alias sb='source ~/.vim/bash_profile'
 alias sz='source ~/.vim/zshrc'
 alias a='ls -Fhla'
@@ -93,7 +79,6 @@ alias buyvia='cd $HOME/code/ProductsWebsites/buyvia'
 alias kernel='cd $HOME/code/ProductsWebsites/buyvia/vendor/saas-management/products-kernel'
 alias quiz='cd $HOME/code/laravel-quiz'
 alias kernellink='ln -s $HOME/code/ProductsWebsites/products-kernel  $HOME/code/ProductsWebsites/buyvia/vendor/saas-management/'
-
 
 #holiday live server
 alias lho='ssh root@138.68.165.181'
@@ -128,8 +113,8 @@ alias pmc='python manage.py check'
 alias pmsh='python manage.py shell'
 alias pmst='python manage.py startapp'
 
-alias tf='source $HOME/tensorflow/bin/activate'
 alias dj='source $HOME/.django/bin/activate'
+alias tf='source $HOME/tensorflow/bin/activate'
 alias tb='tensorboard --logdir=log'
 
 # Print the logs
