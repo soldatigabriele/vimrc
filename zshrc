@@ -128,8 +128,50 @@ function ll {
     --color 
 }
 
-# Plear the logs
+# Print if the zshrc is sourced
+function sourced {
+    echo "Zshrc sourced"
+    echo '
+                                                              -osss+`                               
+                                                        `--``os:-::/yo//:`                          
+                                               -/     /oo//oo/-.-:::::::+h-                         
+                                              /sh-`.+s/-.........-::::::::yo`                       
+                                             `h-:+++:-.://----+yyo:::::::::+y+`                     
+                                             .y......-ys/+yyhhy++hd/::::///::/so`                   
+                                             -d:..-:oy:.........--/sssyyyyydy::/h.                  
+                                            `h/ssyoo/...........::---------dh:::+y                  
+                                            `h:od::+/.........../o+------:hy:::::d`                 
+                                             -hm:.................-------/yo:::::h`                 
+                                             .N/..od-..../....:++:-------:+oyo::+s                  
+                                             yy...dm-..-s+...-/+ydo------/+osys:h.                  
+            -+ooo:                          .N/...-:../ho........-/------/+oosdh+                   
+          .ys:--:d-                         :N-......oN+..........-------//o/yms                    
+         .h/....-d:                         /N.......-yh-.........--------/-/dd.                    
+         /h.....ss                          -N-..-.....-.....-yy/------------:dy                    
+         :h....-d-                          `m+.ys:-----:::///:oms-----------+m+                    
+         `y+.---sy.                          +d./y+/:-...--:/oo/+o-------/+shy/                     
+      .-:/odo:---/ss-                        `hs...-:/+ooso+/-..--------smo/.`                      
+    :so::--:/+oso/-:ss.                       `ys.....+so-.....-------+hy-                          
+   .d-.........-:oy--/y/.`                     `+y:...........-----:odhso+:.`                       
+   `y/.-////:-.---h/--/ddyso+/::-----------:::/++ydy/-.......-----/+od/:::+dys/-                    
+    .ds+/::/+ooo+ss----hydyyyyyyyyyyyyyyyyyyyyyyyyhy+oso/::::------+h+::::ydsyyhyo:`                
+    s+.........-/ss:--+y:dyssssssssssssssssssssssshy-::oyhyso+//+oys/::::ydysssssyhhs:`             
+    /s+-:///::--..+y-+d:-hysssssssssssssssssssssssyd+:::::/+oooo+/:::::sdhssssssssssyhy+-           
+     -do////++ooosh/-+h-:msssssssssssssssssssssssssyhy::::::::-:::-/+yhhyssssssssssssssyhs:         
+     +y-........-/d--h/-yhsssssssssssssssssysssssssssm/:::::::/+oshhhyyssssssssssssssssssyhy:       
+     `ohyo+/////+so/y+:yhsssssssssssssssyyhdssssssssym:::::::/dhhyyssssssssssssssssssssssssyhy-     
+       .+ssssssossss/ohyssssssssyyyhhyys+/yhssssssssyh::::::-ymysssssssssssssssssssssssssssssyho`   
+          `.----:+ooyhyyyyyyyyyso+/:..`   dhssssssssds::::::-ddsssssssssssssssssssssssssssssssshh:  
+                     `````````           `mhssssssssm/:::::::mhsssssssssssyyssssssssssssssssssssyd+ 
+                                         `mhsssssssyN:::::::+myssssssssssssyhhyysssssssssssssssssyd+
+                                         `mhsssssssyd-::::::smyssssssssssssssyhddyhhhyyyssssssssssyd
+   
+'
+}
+
+# Clear the logs
 function lc {
     echo "Clearing contents of Laravel Log File"
     echo > storage/logs/laravel*.log
 }
+
