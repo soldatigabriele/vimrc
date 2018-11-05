@@ -74,6 +74,8 @@ alias ldo='ssh root@178.62.47.7'
 # Aliases Laravel
 alias pa='php artisan' 
 alias pat='php artisan tinker' 
+alias pad='php artisan dusk' 
+alias dusk='php artisan dusk --filter=' 
 alias cda='composer dump-autoload' 
 alias ni='npm install && npm run dev' 
 alias nrd='npm run dev' 
