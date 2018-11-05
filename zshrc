@@ -72,17 +72,23 @@ alias kernellink='ln -s $HOME/code/ProductsWebsites/products-kernel  $HOME/code/
 alias ldo='ssh root@178.62.47.7'
 
 # Aliases Laravel
+alias cda='composer dump-autoload' 
 alias pa='php artisan' 
 alias pat='php artisan tinker' 
-alias cda='composer dump-autoload' 
-alias ni='npm install && npm run dev' 
-alias nrd='npm run dev' 
-alias nrw='npm run watch' 
 alias ql='php artisan queue:listen --tries=3' 
 alias pacc='php artisan config:cache'
 alias dr='cda && php artisan config:clear && php artisan migrate:refresh --seed'
+
+# Testing
+alias pad='php artisan dusk' 
+alias dusk='php artisan dusk --filter=' 
 alias tt='vendor/bin/phpunit' 
 alias ttf='vendor/bin/phpunit --filter' 
+
+# Npm
+alias ni='npm install && npm run dev' 
+alias nrd='npm run dev' 
+alias nrw='npm run watch' 
 
 # Print if the zshrc is sourced
 function sourced {
