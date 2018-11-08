@@ -41,8 +41,14 @@ alias sz='source ~/.vim/zshrc'
 
 ## Aliases GIT
 alias diff='git diff'
-alias stash='git add . && git stash'
-alias stasha='git stash apply'
+alias stash='git stash save '
+alias stasha='git stash apply '
+alias stashp='git stash pop '
+alias stashl='git stash list'
+alias sa='stasha'
+alias sl='stashl'
+alias sp='stashp'
+
 alias gs='git status'
 alias gl='git log'
 alias glg='git log --oneline --graph'
@@ -60,6 +66,7 @@ alias nb='git checkout -b '
 alias cb='git checkout '
 alias bd='git branch -d '
 alias bm='git checkout master'
+alias dev='git checkout development'
 
 # Aliases SAASMANAGEMENT
 alias code='cd $HOME/code/'
