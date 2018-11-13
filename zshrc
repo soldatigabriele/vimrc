@@ -135,6 +135,6 @@ function sourced {
                                          `mhsssssssyd-::::::smyssssssssssssssyhddyhhhyyyssssssssssyd
    
 '
-    echo "Zshrc sourced corretly!"
+    echo "Zshrc sourced correctly!"
 }
 
