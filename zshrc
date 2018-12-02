@@ -50,7 +50,7 @@ alias sl='stashl'
 alias sp='stashp'
 
 alias gs='git status'
-alias gl='git log'
+alias gl='git log --oneline'
 alias glg='git log --oneline --graph'
 alias gb='git branch'
 alias gbv='git branch -v'
