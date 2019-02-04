@@ -71,6 +71,7 @@ alias dev='git checkout development'
 # Aliases SAASMANAGEMENT
 alias code='cd $HOME/code/'
 alias buyvia='cd $HOME/code/ProductsWebsites/buyvia'
+alias wedo='cd $HOME/code/ProductsWebsites/wedodeals'
 alias kernel='cd $HOME/code/ProductsWebsites/buyvia/vendor/saas-management/products-kernel'
 alias quiz='cd $HOME/code/laravel-quiz'
 alias kernellink='ln -s $HOME/code/ProductsWebsites/products-kernel  $HOME/code/ProductsWebsites/buyvia/vendor/saas-management/'
@@ -89,6 +90,7 @@ alias dr='cda && php artisan config:clear && php artisan migrate:refresh --seed'
 # Testing
 alias pad='php artisan dusk' 
 alias dusk='php artisan dusk --filter=' 
+alias padf=dusk 
 alias tt='vendor/bin/phpunit' 
 alias ttf='vendor/bin/phpunit --filter' 
 
