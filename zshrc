@@ -141,3 +141,9 @@ function sourced {
     echo "Zshrc sourced correctly!"
 }
 
+
+# Forecast
+alias wm="curl -4 wttr.in/Manchester"
+function weather () {
+    curl -4 wttr.in/$1; 
+}
