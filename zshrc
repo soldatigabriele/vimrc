@@ -91,6 +91,7 @@ alias dr='cda && php artisan config:clear && php artisan migrate:refresh --seed'
 alias pad='php artisan dusk' 
 alias dusk='php artisan dusk --filter=' 
 alias padf=dusk 
+alias phpunit='vendor/bin/phpunit' 
 alias tt='vendor/bin/phpunit' 
 alias ttf='vendor/bin/phpunit --filter' 
 
