@@ -86,7 +86,7 @@ alias sshmysql='docker exec -it banking-service_mysql_1 mysql -uroot'
 function dexec {
     echo "docker exec -it  $1 /bin/bash"
 }
-alias genny='sudo phpmetrics --report-html=../phpmetrics/ .'
+alias genny='sudo phpmetrics --report-html=../phpmetrics/ . && open ../phpmetrics/index.html'
 
 # Digital Ocean
 alias ldo='ssh root@178.62.47.7'
