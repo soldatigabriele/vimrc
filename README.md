@@ -127,3 +127,20 @@ dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
 <h3>Vinegar</h3>
 If it is not going back with - 
 Substitute the bundle/vim-vinegar/plugin/vinegar.vim with fix/vinegar.vim 
+
+
+#### Phpmetrics
+
+Install phpmetrics:
+
+```bash
+composer global require 'halleck45/phpmetrics'
+```
+
+run phpmetrics:
+
+```bash
+genny
+```
+
+

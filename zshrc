@@ -28,7 +28,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # User configuration
 
 # enable vi mode in terminal
-bindkey -v
+#bindkey -v
 
 alias a='ls -Fhla'
 alias ll='ls -FhlSG'
@@ -75,6 +75,18 @@ alias wedo='cd $HOME/code/ProductsWebsites/wedosavings'
 alias kernel='cd $HOME/code/ProductsWebsites/buyvia/vendor/saas-management/products-kernel'
 alias quiz='cd $HOME/code/laravel-quiz'
 alias kernellink='ln -s $HOME/code/ProductsWebsites/products-kernel  $HOME/code/ProductsWebsites/buyvia/vendor/saas-management/'
+
+# Aliases CAPIFY
+alias ds='docker stats'
+alias dc='docker-compose'
+alias bank='cd $HOME/code/backend/banking-service'
+alias sshbanking='docker exec -it banking-service_v1-banking_1 /bin/bash'
+alias sshbank=sshbanking
+alias sshmysql='docker exec -it banking-service_mysql_1 mysql -uroot'
+function dexec {
+    echo "docker exec -it  $1 /bin/bash"
+}
+alias genny='sudo phpmetrics --report-html=../phpmetrics/ .'
 
 # Digital Ocean
 alias ldo='ssh root@178.62.47.7'
