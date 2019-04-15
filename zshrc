@@ -77,16 +77,15 @@ alias quiz='cd $HOME/code/laravel-quiz'
 alias kernellink='ln -s $HOME/code/ProductsWebsites/products-kernel  $HOME/code/ProductsWebsites/buyvia/vendor/saas-management/'
 
 # Aliases CAPIFY
-alias ds='docker stats'
 alias dc='docker-compose'
+alias dcup='docker-compose up mysql v1-banking v1-identity api-gateway v1-filesystem'
 alias bank='cd $HOME/code/backend/banking-service'
-alias sshbanking='docker exec -it banking-service_v1-banking_1 /bin/bash'
-alias sshbank=sshbanking
+alias sshbank='docker exec -it banking-service_v1-banking_1 /bin/bash'
 alias sshmysql='docker exec -it banking-service_mysql_1 mysql -uroot'
 function dexec {
     echo "docker exec -it  $1 /bin/bash"
 }
-alias genny='sudo phpmetrics --report-html=../phpmetrics/ . && open ../phpmetrics/index.html'
+alias genny='php ~/.composer/vendor/bin/phpmetrics --report-html=../phpmetrics . --exclude="vendor" && open ../phpmetrics/index.html'
 
 # Digital Ocean
 alias ldo='ssh root@178.62.47.7'

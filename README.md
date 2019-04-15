@@ -134,7 +134,7 @@ Substitute the bundle/vim-vinegar/plugin/vinegar.vim with fix/vinegar.vim
 Install phpmetrics:
 
 ```bash
-composer global require 'halleck45/phpmetrics'
+composer global require 'phpmetrics/phpmetrics'
 ```
 
 run phpmetrics:
