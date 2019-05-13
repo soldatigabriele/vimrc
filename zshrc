@@ -4,6 +4,9 @@ ssh-add -K ~/.ssh/do_rsa
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+# Path to Go
+export PATH=$PATH:/usr/local/go/bin:$(go env GOPATH)/bin
+export GOPATH=$(go env GOPATH)
 
 ZSH_THEME="agnoster"
 
