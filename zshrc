@@ -86,6 +86,7 @@ function dexec {
     echo "docker exec -it  $1 /bin/bash"
 }
 alias genny='php ~/.composer/vendor/bin/phpmetrics --report-html=../phpmetrics . --exclude="vendor" && open ../phpmetrics/index.html'
+alias alpine='docker run -p 80:8080 -v $(pwd):/var/www/html trafex/alpine-nginx-php7'
 
 # Digital Ocean
 alias ldo='ssh root@178.62.47.7'
