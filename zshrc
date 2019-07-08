@@ -7,6 +7,10 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # Path to Go
 export PATH=$PATH:/usr/local/go/bin:$(go env GOPATH)/bin
 export GOPATH=$(go env GOPATH)
+# Node Version Manager
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 
 ZSH_THEME="agnoster"
 
@@ -69,25 +73,19 @@ alias nb='git checkout -b '
 alias cb='git checkout '
 alias bd='git branch -d '
 alias bm='git checkout master'
-alias dev='git checkout development'
+
+alias code='cd $HOME/code/'
 
 # Aliases SAASMANAGEMENT
-alias code='cd $HOME/code/'
 alias buyvia='cd $HOME/code/ProductsWebsites/buyvia'
-alias wedo='cd $HOME/code/ProductsWebsites/wedosavings'
 alias kernel='cd $HOME/code/ProductsWebsites/buyvia/vendor/saas-management/products-kernel'
-alias quiz='cd $HOME/code/laravel-quiz'
-alias kernellink='ln -s $HOME/code/ProductsWebsites/products-kernel  $HOME/code/ProductsWebsites/buyvia/vendor/saas-management/'
 
 # Aliases CAPIFY
 alias dc='docker-compose'
-alias dcup='docker-compose up mysql v1-banking v1-identity api-gateway v1-filesystem'
 alias bank='cd $HOME/code/backend/banking-service'
 alias sshbank='docker exec -it banking-service_v1-banking_1 /bin/bash'
 alias sshmysql='docker exec -it banking-service_mysql_1 mysql -uroot'
-function dexec {
-    echo "docker exec -it  $1 /bin/bash"
-}
+
 alias pm='php ~/.composer/vendor/bin/phpmetrics --report-html=../phpmetrics . --exclude="vendor" && open ../phpmetrics/index.html'
 alias alpine='docker run -p 80:8080 -v $(pwd):/var/www/html trafex/alpine-nginx-php7'
 
