@@ -94,6 +94,9 @@ alias alpine='docker run -p 80:8080 -v $(pwd):/var/www/html trafex/alpine-nginx-
 # Digital Ocean
 alias ldo='ssh root@178.62.47.7'
 
+# Macbook2011
+alias macbook='ssh gabri@192.168.1.104'
+
 # Aliases Laravel
 alias cda='composer dump-autoload' 
 alias pa='php artisan' 
