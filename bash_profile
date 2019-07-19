@@ -1,7 +1,6 @@
 source ~/.vim/zshrc
 
 export BASH_CONF="bash_profile"
-export PATH="~/.composer/vendor/bin:$PATH"
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 export CUDA_HOME=/usr/local/cuda
