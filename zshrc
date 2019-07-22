@@ -94,6 +94,9 @@ alias ldo='ssh root@178.62.47.7'
 
 # Macbook2011
 alias macbook='ssh gabri@192.168.1.104'
+function macbook2011 () {
+    eval "$(curl --silent http://178.62.47.7:3200/ip/latest | python -c "import sys,json; print 'ssh gabri@' + json.load(sys.stdin)['address']")"
+}
 
 # Aliases Laravel
 alias cda='composer dump-autoload' 
