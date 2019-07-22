@@ -1,4 +1,3 @@
-eval "$(ssh-agent -s)"
 ssh-add -K ~/.ssh/do_rsa
 
 # Path to your oh-my-zsh installation.
@@ -29,6 +28,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+# Note: this next source increases the time it takes exponentially when sourcing the zshrc file
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
