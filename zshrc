@@ -85,9 +85,11 @@ alias dc='docker-compose'
 alias bank='cd $HOME/code/backend/banking-service'
 alias sshbank='docker exec -it banking-service_v1-banking_1 /bin/bash'
 alias sshmysql='docker exec -it banking-service_mysql_1 mysql -uroot'
+alias ocr='cd $HOME/code/backend/ocr-service'
+alias sshocr='docker-compose exec v1-ocr /bin/bash'
 
 alias pm='php ~/.composer/vendor/bin/phpmetrics --report-html=../phpmetrics . --exclude="vendor" && open ../phpmetrics/index.html'
-alias alpine='docker run -p 80:8080 -v $(pwd):/var/www/html trafex/alpine-nginx-php7'
+alias alpine='docker run -p 4000:8080 -v $(pwd):/var/www/html trafex/alpine-nginx-php7'
 
 # Digital Ocean
 alias ldo='ssh root@178.62.47.7'
