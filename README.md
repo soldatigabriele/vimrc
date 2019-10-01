@@ -52,7 +52,7 @@ Change the theme to Agnoster (if not already selected)
 <br>
 Fonts for powerline:
 ``` 
-cd ~/Desktop && git clone https://github.com/powerline/fonts.git 
+cd ~/Desktop && git clone https://github.com/powerline/fonts.git && cd fonts
 sh ./install.sh && rm -R ~/Desktop/Fonts
 ```
 
