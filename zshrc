@@ -116,6 +116,9 @@ alias phpunit='vendor/bin/phpunit'
 alias tt='vendor/bin/phpunit' 
 alias ttf='vendor/bin/phpunit --filter' 
 
+# Composer
+alias lint='~/.composer/vendor/bin/phpcs'
+
 # Npm
 alias ni='npm install && npm run dev' 
 alias nrd='npm run dev' 
