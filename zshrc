@@ -101,6 +101,11 @@ function macbook2011 () {
     eval "$(curl --silent http://178.62.47.7:3200/ip/latest | python -c "import sys,json; print 'ssh gabri@' + json.load(sys.stdin)['address']")"
 }
 
+# R5 Ubuntu
+function r5 () {
+    eval "$(curl --silent http://178.62.47.7:3200/ip/latest | python -c "import sys,json; print 'ssh gabri@' + json.load(sys.stdin)['address'] + ' -p 23'")"
+}
+
 # Aliases Laravel
 alias cda='composer dump-autoload' 
 alias pa='php artisan' 
