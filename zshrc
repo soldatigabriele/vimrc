@@ -10,6 +10,8 @@ export GOPATH=$(go env GOPATH)
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
+# cd into code from everywhere
+export CDPATH="$HOME/code"
 
 ZSH_THEME="agnoster"
 
