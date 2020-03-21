@@ -78,10 +78,6 @@ alias bm='git checkout master'
 
 alias code='cd $HOME/code/'
 
-# Aliases SAASMANAGEMENT
-alias buyvia='cd $HOME/code/ProductsWebsites/buyvia'
-alias kernel='cd $HOME/code/ProductsWebsites/buyvia/vendor/saas-management/products-kernel'
-
 # Aliases CAPIFY
 alias dc='docker-compose'
 alias bank='cd $HOME/code/backend/banking-service'
@@ -93,6 +89,9 @@ alias textract='cd $HOME/code/textract'
 
 alias pm='php ~/.composer/vendor/bin/phpmetrics --report-html=../phpmetrics . --exclude="vendor" && open ../phpmetrics/index.html'
 alias alpine='docker run -p 4000:8080 -v $(pwd):/var/www/html trafex/alpine-nginx-php7'
+
+# System
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # Digital Ocean
 alias ldo='ssh root@178.62.47.7'
