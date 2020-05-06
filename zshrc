@@ -10,6 +10,9 @@ export GOPATH=$(go env GOPATH)
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
+# Source the passwords file
+source ~/.vim/passwords
+
 # cd into code from everywhere
 export CDPATH="$HOME/code"
 
