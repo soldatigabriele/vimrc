@@ -181,3 +181,10 @@ alias wm="curl -4 wttr.in/Manchester"
 function weather () {
     curl -4 wttr.in/$1; 
 }
+
+
+# Manually source the powerline if in Ubuntu environment and it is installed
+if [ -f /usr/share/powerline/bindings/zsh/powerline.zsh ]; then
+	source /usr/share/powerline/bindings/zsh/powerline.zsh
+fi
+
