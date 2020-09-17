@@ -184,7 +184,7 @@ function weather () {
     curl -4 wttr.in/$1; 
 }
 
-opendb () {
+db () {
    [ ! -f .env ] && { echo "No .env file found."; exit 1; }
 
    DB_CONNECTION=$(grep DB_CONNECTION .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
