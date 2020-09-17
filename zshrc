@@ -3,6 +3,10 @@ ssh-add -K ~/.ssh/do_rsa
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+# Path to PHP 7.3
+export PATH="/usr/local/opt/php@7.3/bin:$PATH"
+export PATH="/usr/local/opt/php@7.3/sbin:$PATH"
+ 
 # Path to Go
 export PATH=$PATH:/usr/local/go/bin:$(go env GOPATH)/bin
 export GOPATH=$(go env GOPATH)
@@ -78,8 +82,6 @@ alias nb='git checkout -b '
 alias cb='git checkout '
 alias bd='git branch -d '
 alias bm='git checkout master'
-
-alias code='cd $HOME/code/'
 
 # Aliases CAPIFY
 alias dc='docker-compose'
@@ -181,3 +183,20 @@ alias wm="curl -4 wttr.in/Manchester"
 function weather () {
     curl -4 wttr.in/$1; 
 }
+
+opendb () {
+   [ ! -f .env ] && { echo "No .env file found."; exit 1; }
+
+   DB_CONNECTION=$(grep DB_CONNECTION .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
+   DB_HOST=$(grep DB_HOST .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
+   DB_PORT=$(grep DB_PORT .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
+   DB_DATABASE=$(grep DB_DATABASE .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
+   DB_USERNAME=$(grep DB_USERNAME .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
+   DB_PASSWORD=$(grep DB_PASSWORD .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
+
+   DB_URL="${DB_CONNECTION}://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_DATABASE}"
+
+   echo "Opening ${DB_URL}"
+   open $DB_URL
+}
+
