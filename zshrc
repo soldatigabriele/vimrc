@@ -48,6 +48,8 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias a='ls -Fhla'
 alias ll='ls -FhlSG'
+# List files with size human readable
+alias ducks='du -cksh * | sort -hr | head -n 15'
 
 # Vim and Terminal config
 alias zshrc="mvim ~/.vim/zshrc"
