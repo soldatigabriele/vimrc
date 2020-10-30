@@ -9,6 +9,7 @@ export GOPATH=$(go env GOPATH)
 # Node Version Manager
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+export PATH="/usr/local/opt/php@7.2/bin:$PATH"
 
 # cd into code from everywhere
 export CDPATH="$HOME/code"
@@ -26,7 +27,7 @@ set completion-ignore-case on
 
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(
- git osx zsh-autosuggestions
+#  git osx zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -41,6 +42,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias a='ls -Fhla'
 alias ll='ls -FhlSG'
+alias ofd='open_command $PWD'
 
 # Vim and Terminal config
 alias zshrc="mvim ~/.vim/zshrc"
@@ -107,6 +109,10 @@ function macbook2011 () {
 function r5 () {
     eval "$(curl --silent http://178.62.47.7:3200/ip/latest | python -c "import sys,json; print 'ssh gabri@' + json.load(sys.stdin)['address'] + ' -p 23'")"
 }
+
+# Benchmarks
+# benchmark http://localhost.com/etc
+alias benchmark='ab -t 10 -c 10'
 
 # Aliases Laravel
 alias cda='composer dump-autoload' 
