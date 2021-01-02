@@ -1,3 +1,5 @@
+# Not sure if we need this. We should add in the ~/.ssh/config file the keys
+# to be used for each host. Maybe this will prevent problems on ubuntu/mac?
 ssh-add -K ~/.ssh/do_rsa
 
 # Path to your oh-my-zsh installation.
@@ -12,7 +14,8 @@ export PATH=$PATH:/usr/local/go/bin:$(go env GOPATH)/bin
 export GOPATH=$(go env GOPATH)
 # Node Version Manager
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+# (this is very slow. Add it only if needed)
+# source $(brew --prefix nvm)/nvm.sh
 
 # Source the passwords file
 source ~/.vim/passwords
