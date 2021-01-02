@@ -13,3 +13,5 @@ export PATH="$CUDA_HOME/bin:$PATH"
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 
+export CDPATH="/Users/gab/code/backend:/Users/gab/code/tools"
+
