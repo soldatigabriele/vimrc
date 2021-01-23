@@ -19,6 +19,9 @@ export NVM_DIR=~/.nvm
 
 export PATH="/usr/local/opt/php@7.2/bin:$PATH"
 
+# Install macvim
+alias mvim="/Applications/MacVim.app/Contents/bin/mvim"
+
 # Source the passwords file
 source ~/.vim/passwords
 
@@ -218,3 +221,9 @@ if [ -f /usr/share/powerline/bindings/zsh/powerline.zsh ]; then
 	source /usr/share/powerline/bindings/zsh/powerline.zsh
 fi
 
+export PATH=/opt/homebrew/bin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.3/sbin:/usr/local/opt/php@7.3/bin:/Users/gabri/.composer/vendor/bin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.3/sbin:/usr/local/opt/php@7.3/bin:/Users/gabri/.composer/vendor/bin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.3/sbin:/usr/local/opt/php@7.3/bin:/Users/gabri/.composer/vendor/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/bin:/usr/local/go/bin:/bin:/usr/local/go/bin:/bin
+
+# Nice arm alias for running commands with x86_64 architecture flags (M1 mac)
+arm() {
+  arch -x86_64 $@
+}

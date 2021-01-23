@@ -1,9 +1,11 @@
 # vimrc
 
 
-<h3>Install Macvim</h3>
-use install_mvim.sh
-<br>
+## Install Macvim
+
+Download MacVim from the [official website](https://macvim-dev.github.io/macvim).
+
+Note: there is an alias for alias mvim that points to the application bin file; this way it can run from the terminal with the `mvim` command.
 
 <h3>Add SSH</h3>
 cd ~/.ssh
