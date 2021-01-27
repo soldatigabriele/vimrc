@@ -5,9 +5,12 @@ ssh-add -K ~/.ssh/do_rsa
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export PATH="$HOME/.composer/vendor/bin:$PATH"
-# Path to PHP 7.3
-export PATH="/usr/local/opt/php@7.3/bin:$PATH"
-export PATH="/usr/local/opt/php@7.3/sbin:$PATH"
+# Path to PHP 7.2
+# export PATH="/usr/local/opt/php@7.2/bin:$PATH"
+# export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
+# Path to PHP 7.4
+export PATH="/usr/local/opt/php@7.4/bin:$PATH"
+export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
  
 # Path to Go
 export PATH=$PATH:/usr/local/go/bin:$(go env GOPATH)/bin
@@ -16,8 +19,6 @@ export GOPATH=$(go env GOPATH)
 export NVM_DIR=~/.nvm
 # (this is very slow. Add it only if needed)
 # source $(brew --prefix nvm)/nvm.sh
-
-export PATH="/usr/local/opt/php@7.2/bin:$PATH"
 
 # Install macvim
 alias mvim="/Applications/MacVim.app/Contents/bin/mvim"
@@ -97,12 +98,14 @@ alias bm='git checkout master'
 
 # Aliases CAPIFY
 alias dc='docker-compose'
+alias di='docker images --format "{{.ID}}\t{{.Size}}\t{{.Repository}}" | sort -k 2 -h'
 alias bank='cd $HOME/code/backend/banking-service'
 alias sshbank='docker exec -it banking-service_v1-banking_1 /bin/bash'
 alias sshmysql='docker exec -it banking-service_mysql_1 mysql -uroot'
 alias ocr='cd $HOME/code/backend/ocr-service'
 alias sshocr='docker-compose exec v1-ocr /bin/bash'
 alias textract='cd $HOME/code/textract'
+alias tunnel='bash $HOME/capify/mysql-tunnel.sh'
 
 alias pm='php ~/.composer/vendor/bin/phpmetrics --report-html=../phpmetrics . --exclude="vendor" && open ../phpmetrics/index.html'
 alias alpine='docker run -p 4000:8080 -v $(pwd):/var/www/html trafex/alpine-nginx-php7'
