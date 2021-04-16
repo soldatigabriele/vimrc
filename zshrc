@@ -6,12 +6,18 @@ ssh-add -K ~/.ssh/do_rsa
 export ZSH=$HOME/.oh-my-zsh
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 # Path to PHP 7.2
-# export PATH="/usr/local/opt/php@7.2/bin:$PATH"
-# export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
-# Path to PHP 7.4
-export PATH="/usr/local/opt/php@7.4/bin:$PATH"
-export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
- 
+export PATH="/usr/local/opt/php@7.2/bin:$PATH"
+export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
+
+# Path to PHP 7.2
+function php72(){
+    export PATH="/usr/local/opt/php@7.2/bin:$PATH"
+    export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
+}
+function php74(){
+    export PATH="/usr/local/opt/php@7.4/bin:$PATH"
+    export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
+}
 # Path to Go
 export PATH=$PATH:/usr/local/go/bin:$(go env GOPATH)/bin
 export GOPATH=$(go env GOPATH)
@@ -35,7 +41,10 @@ ZSH_THEME="agnoster"
 export UPDATE_ZSH_DAYS=3
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
+
+# Disable autocorrection prompt
+unsetopt correct_all
 
 # solves a problem with iterm2 when pressing tab to complete a folder
 set completion-ignore-case on 
@@ -224,7 +233,7 @@ if [ -f /usr/share/powerline/bindings/zsh/powerline.zsh ]; then
 	source /usr/share/powerline/bindings/zsh/powerline.zsh
 fi
 
-export PATH=/opt/homebrew/bin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.3/sbin:/usr/local/opt/php@7.3/bin:/Users/gabri/.composer/vendor/bin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.3/sbin:/usr/local/opt/php@7.3/bin:/Users/gabri/.composer/vendor/bin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.3/sbin:/usr/local/opt/php@7.3/bin:/Users/gabri/.composer/vendor/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/bin:/usr/local/go/bin:/bin:/usr/local/go/bin:/bin
+# export PATH=/opt/homebrew/bin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.3/sbin:/usr/local/opt/php@7.3/bin:/Users/gabri/.composer/vendor/bin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.3/sbin:/usr/local/opt/php@7.3/bin:/Users/gabri/.composer/vendor/bin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.3/sbin:/usr/local/opt/php@7.3/bin:/Users/gabri/.composer/vendor/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/bin:/usr/local/go/bin:/bin:/usr/local/go/bin:/bin
 
 # Nice arm alias for running commands with x86_64 architecture flags (M1 mac)
 arm() {
