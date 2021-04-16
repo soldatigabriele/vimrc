@@ -5,9 +5,7 @@ ssh-add -K ~/.ssh/do_rsa
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export PATH="$HOME/.composer/vendor/bin:$PATH"
-# Path to PHP 7.2
-export PATH="/usr/local/opt/php@7.2/bin:$PATH"
-export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
+
 
 # Path to PHP 7.2
 function php72(){
