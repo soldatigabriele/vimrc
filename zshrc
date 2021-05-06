@@ -104,7 +104,7 @@ alias bd='git branch -d '
 alias bm='git checkout master'
 
 # Aliases CAPIFY
-alias dc='docker-compose'
+alias dc='docker compose'
 alias di='docker images --format "{{.ID}}\t{{.Size}}\t{{.Repository}}" | sort -k 2 -h'
 alias bank='cd $HOME/code/backend/banking-service'
 alias sshbank='docker exec -it banking-service_v1-banking_1 /bin/bash'
@@ -114,7 +114,7 @@ alias sshocr='docker-compose exec v1-ocr /bin/bash'
 alias textract='cd $HOME/code/textract'
 alias tunnel='bash $HOME/capify/mysql-tunnel.sh'
 
-alias pm='php ~/.composer/vendor/bin/phpmetrics --report-html=../phpmetrics . --exclude="vendor" && open ../phpmetrics/index.html'
+alias pm='php ~/.composer/vendor/bin/phpmetrics --report-html=../phpmetrics . --exclude="vendor","history","tests" && open ../phpmetrics/index.html'
 alias alpine='docker run -p 4000:8080 -v $(pwd):/var/www/html trafex/alpine-nginx-php7'
 
 # System
