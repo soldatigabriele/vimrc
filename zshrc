@@ -104,7 +104,7 @@ alias bd='git branch -d '
 alias bm='git checkout master'
 
 # Aliases CAPIFY
-alias dc='docker compose'
+alias dc='docker-compose'
 alias di='docker images --format "{{.ID}}\t{{.Size}}\t{{.Repository}}" | sort -k 2 -h'
 alias bank='cd $HOME/code/backend/banking-service'
 alias sshbank='docker exec -it banking-service_v1-banking_1 /bin/bash'
