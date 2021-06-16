@@ -103,6 +103,14 @@ alias cb='git checkout '
 alias bd='git branch -d '
 alias bm='git checkout master'
 
+# Aliases GLOBUS
+alias vpd='ssh forge@161.35.40.68'
+alias fresh='php artisan migrate:fresh --database mysql-tests && php artisan migrate:fresh'
+alias product='php artisan products:sync 121260 8777'
+alias products='php artisan products:sync'
+alias cats='php artisan categories:sync'
+alias refresh='fresh && cats && product'
+
 # Aliases CAPIFY
 alias dc='docker-compose'
 alias di='docker images --format "{{.ID}}\t{{.Size}}\t{{.Repository}}" | sort -k 2 -h'
