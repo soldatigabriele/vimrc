@@ -245,3 +245,18 @@ fi
 arm() {
   arch -x86_64 $@
 }
+
+
+password(){
+    for i in {1..5}
+    do
+        RAND=$(openssl rand -base64 32)
+        echo ""
+        echo $RAND | openssl md5
+    done
+    echo ""
+}
+
+zen(){
+    echo $(curl -s https://api.github.com/zen)
+}
