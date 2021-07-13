@@ -161,6 +161,8 @@ alias padf=dusk
 alias phpunit='vendor/bin/phpunit' 
 alias tt='vendor/bin/phpunit' 
 alias ttf='vendor/bin/phpunit --filter' 
+alias coverage='php -d zend_extension=xdebug.so ./vendor/bin/phpunit'
+
 
 # Composer
 alias lint='~/.composer/vendor/bin/phpcs'
