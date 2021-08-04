@@ -1,12 +1,35 @@
+# ---------- START ZSHRC ------------
+
+ZSH_THEME="agnoster"
+
+# Uncomment the following line to change how often to auto-update (in days).
+export UPDATE_ZSH_DAYS=28
+
+# Uncomment the following line to enable command auto-correction.
+ENABLE_CORRECTION="false"
+
+# Disable autocorrection prompt
+unsetopt correct_all
+
+# solves a problem with iterm2 when pressing tab to complete a folder
+set completion-ignore-case on 
+
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+plugins=(
+#  git osx zsh-autosuggestions
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# ---------- END ZSHRC --------------
+
 # Not sure if we need this. We should add in the ~/.ssh/config file the keys
 # to be used for each host. Maybe this will prevent problems on ubuntu/mac?
-ssh-add -K ~/.ssh/do_rsa
+# ssh-add -K ~/.ssh/do_rsa
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export PATH="$HOME/.composer/vendor/bin:$PATH"
-
-
 # Path to PHP 7.2
 function php72(){
     export PATH="/usr/local/opt/php@7.2/bin:$PATH"
@@ -27,52 +50,26 @@ export NVM_DIR=~/.nvm
 # Install macvim
 alias mvim="/Applications/MacVim.app/Contents/bin/mvim"
 
-# Source the passwords file
-source ~/.vim/passwords
-
 # cd into code from everywhere
 export CDPATH="$HOME/code"
 
-ZSH_THEME="agnoster"
+source /Users/gabriele/.vim/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Uncomment the following line to change how often to auto-update (in days).
-export UPDATE_ZSH_DAYS=3
-
-# Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="false"
-
-# Disable autocorrection prompt
-unsetopt correct_all
-
-# solves a problem with iterm2 when pressing tab to complete a folder
-set completion-ignore-case on 
-
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(
-#  git osx zsh-autosuggestions
-)
-
-source $ZSH/oh-my-zsh.sh
-# Note: this next source increases the time it takes exponentially when sourcing the zshrc file
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
-# User configuration
+# List all the aliases in this file
+alias aliases='cat ~/.vim/zshrc|grep alias'
 
 # enable vi mode in terminal
 #bindkey -v
 
+# List files with size human readable
+alias ducks='du -cksh * | sort -hr | head -n 15'
 alias a='ls -Fhla'
 alias ll='ls -FhlSG'
 alias ofd='open_command $PWD'
 
-# List files with size human readable
-alias ducks='du -cksh * | sort -hr | head -n 15'
-
 # Vim and Terminal config
 alias zshrc="mvim ~/.vim/zshrc"
 alias cdvim='cd ~/.vim'
-alias sb='source ~/.vim/bash_profile'
 alias sz='source ~/.vim/zshrc'
 
 ## Aliases GIT
@@ -104,26 +101,19 @@ alias bd='git branch -d '
 alias bm='git checkout master'
 
 # Aliases GLOBUS
-alias vpd='ssh forge@161.35.40.68'
 alias fresh='php artisan migrate:fresh --database mysql-tests && php artisan migrate:fresh'
 alias product='php artisan products:sync 121260 8777'
 alias products='php artisan products:sync'
 alias cats='php artisan categories:sync'
 alias refresh='fresh && cats && product'
 
-# Aliases CAPIFY
+# Aliases Docker
 alias dc='docker-compose'
 alias di='docker images --format "{{.ID}}\t{{.Size}}\t{{.Repository}}" | sort -k 2 -h'
-alias bank='cd $HOME/code/backend/banking-service'
-alias sshbank='docker exec -it banking-service_v1-banking_1 /bin/bash'
-alias sshmysql='docker exec -it banking-service_mysql_1 mysql -uroot'
-alias ocr='cd $HOME/code/backend/ocr-service'
-alias sshocr='docker-compose exec v1-ocr /bin/bash'
-alias textract='cd $HOME/code/textract'
-alias tunnel='bash $HOME/capify/mysql-tunnel.sh'
-
-alias pm='php ~/.composer/vendor/bin/phpmetrics --report-html=../phpmetrics . --exclude="vendor","history","tests" && open ../phpmetrics/index.html'
 alias alpine='docker run -p 4000:8080 -v $(pwd):/var/www/html trafex/alpine-nginx-php7'
+
+# PHPMetrics
+alias pm='php ~/.composer/vendor/bin/phpmetrics --report-html=../phpmetrics . --exclude="vendor","history","tests" && open ../phpmetrics/index.html'
 
 # System
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -161,16 +151,11 @@ alias padf=dusk
 alias phpunit='vendor/bin/phpunit' 
 alias tt='vendor/bin/phpunit' 
 alias ttf='vendor/bin/phpunit --filter' 
-alias coverage='php -d zend_extension=xdebug.so ./vendor/bin/phpunit'
-
+# Tested on M1
+alias coverage='XDEBUG_MODE=coverage ./vendor/bin/phpunit'
 
 # Composer
 alias lint='~/.composer/vendor/bin/phpcs'
-
-# Npm
-alias ni='npm install && npm run dev' 
-alias nrd='npm run dev' 
-alias nrw='npm run watch' 
 
 # Print if the zshrc is sourced
 function sourced {
@@ -247,7 +232,6 @@ fi
 arm() {
   arch -x86_64 $@
 }
-
 
 password(){
     for i in {1..5}
