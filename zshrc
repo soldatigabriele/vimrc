@@ -119,7 +119,8 @@ alias pm='php ~/.composer/vendor/bin/phpmetrics --report-html=../phpmetrics . --
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # Digital Ocean
-alias ldo='ssh root@178.62.47.7'
+#alias ldo='ssh root@178.62.47.7'
+alias ldo='ssh root@134.209.18.172'
 
 # Macbook2011
 alias macbook='ssh gabri@192.168.1.104'
@@ -228,6 +229,7 @@ fi
 
 # export PATH=/opt/homebrew/bin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.3/sbin:/usr/local/opt/php@7.3/bin:/Users/gabri/.composer/vendor/bin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.3/sbin:/usr/local/opt/php@7.3/bin:/Users/gabri/.composer/vendor/bin:/usr/local/opt/php@7.2/bin:/usr/local/opt/php@7.3/sbin:/usr/local/opt/php@7.3/bin:/Users/gabri/.composer/vendor/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/bin:/usr/local/go/bin:/bin:/usr/local/go/bin:/bin
 
+# M1 Macbook stuff
 # Nice arm alias for running commands with x86_64 architecture flags (M1 mac)
 arm() {
   arch -x86_64 $@
@@ -246,3 +248,8 @@ password(){
 zen(){
     echo $(curl -s https://api.github.com/zen)
 }
+# Export python 3.7 to develop old stuff. If not installed run: $ arm brew install python@3.7
+# export PATH="/usr/local/opt/python@3.7/bin:$PATH"
+# Export python 3.8 to develop old stuff. If not installed run: $ arm brew install python@3.8
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+
