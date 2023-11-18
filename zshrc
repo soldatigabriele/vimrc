@@ -39,6 +39,10 @@ function php74(){
     export PATH="/usr/local/opt/php@7.4/bin:$PATH"
     export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
 }
+function php81(){
+    export PATH="/usr/local/opt/php@8.1/bin:$PATH"
+    export PATH="/usr/local/opt/php@8.1/sbin:$PATH"
+}
 # Path to Go
 export PATH=$PATH:/usr/local/go/bin:$(go env GOPATH)/bin
 export GOPATH=$(go env GOPATH)
@@ -120,7 +124,9 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # Digital Ocean
 #alias ldo='ssh root@178.62.47.7'
-alias ldo='ssh root@134.209.18.172'
+# ubuntu 20
+#alias ldo='ssh root@134.209.18.172'
+alias ldo='ssh root@159.65.28.216'
 
 # Macbook2011
 alias macbook='ssh gabri@192.168.1.104'
