@@ -12,7 +12,7 @@ ENABLE_CORRECTION="false"
 unsetopt correct_all
 
 # solves a problem with iterm2 when pressing tab to complete a folder
-set completion-ignore-case on 
+#set completion-ignore-case on 
 
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(
@@ -259,3 +259,6 @@ zen(){
 # Export python 3.8 to develop old stuff. If not installed run: $ arm brew install python@3.8
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 
+# Zoxide
+eval "$(zoxide init --cmd cd zsh)"
+eval "$(fzf --zsh)"
