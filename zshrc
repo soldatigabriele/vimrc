@@ -76,6 +76,9 @@ alias zshrc="mvim ~/.vim/zshrc"
 alias cdvim='cd ~/.vim'
 alias sz='source ~/.vim/zshrc'
 
+# WOL
+alias wol='wakeonlan 04:42:1A:EB:D4:2B'
+
 ## Aliases GIT
 alias diff='git diff'
 alias stash='git stash save '
