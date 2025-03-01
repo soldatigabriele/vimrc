@@ -260,7 +260,17 @@ zen(){
 # Export python 3.7 to develop old stuff. If not installed run: $ arm brew install python@3.7
 # export PATH="/usr/local/opt/python@3.7/bin:$PATH"
 # Export python 3.8 to develop old stuff. If not installed run: $ arm brew install python@3.8
-export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+# export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+
+# The next 3 lines are for using pyenv to switch version of Python, it's like NVM but for pithon, use this as of 2025
+#
+# pyenv versions <- check installed
+# pyenv install 3.11 <- install a version
+# pyenv global 3.11 <- set it as current
+#
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init - zsh)"' >> ~/.zshrc
 
 # Zoxide
 eval "$(zoxide init --cmd cd zsh)"
